@@ -310,7 +310,7 @@ function App() {
                   const dayEvents = monthEvents.filter((event) => new Date(event.starts_at).toDateString() === day.toDateString())
                   const inCurrentMonth = day.getMonth() === month.getMonth()
                   const isToday = day.toDateString() === new Date().toDateString()
-                  return <div className={`calendar-day ${inCurrentMonth ? '' : 'outside-month'}`} key={day.toISOString()}><span className={isToday ? 'today' : ''}>{day.getDate()}</span>{dayEvents.map((event) => <button className={`event-pill ${eventTypes[event.type].color}`} key={event.id} onClick={() => setEventForm({ ...event, starts_at: toLocalInput(event.starts_at) })}>{formatDate(event.starts_at, { hour: '2-digit', minute: '2-digit' })} {event.title}</button>)}</div>
+                  return <div className={`calendar-day ${inCurrentMonth ? '' : 'outside-month'}`} key={day.toISOString()}><span className={isToday ? 'today' : ''}>{day.getDate()}</span>{dayEvents.map((event) => <button className={`event-pill ${eventTypes[event.type].color}`} key={event.id} onClick={() => setEventForm({ ...event, starts_at: toLocalInput(event.starts_at) })}>{event.title}</button>)}</div>
                 })}
               </div>
           ) : (
