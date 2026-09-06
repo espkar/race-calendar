@@ -358,16 +358,26 @@ function RunnersModal({ athletes, athleteName, setAthleteName, onAdd, onRemove, 
 }
 
 function EventCard({ event, registrations, athletes, onEdit, onDelete, onStatus, compact = false }) {
+  const [showRunners, setShowRunners] = useState(false)
   const registered = registrations.filter((item) => item.status === 'registered').length
   return <article className={`event-card ${compact ? 'compact' : ''}`}>
-    <div className="event-date"><b>{formatDate(event.starts_at, { day: 'numeric' })}</b><span>{formatDate(event.starts_at, { month: 'short' })}</span></div>
-    <div className="event-info">
-      <div className="event-title-line"><span className={`type-dot ${eventTypes[event.type].color}`} /><h3>{event.title}</h3></div>
-      <p>{formatDate(event.starts_at, { weekday: 'short', hour: '2-digit', minute: '2-digit' })} · {event.location || 'Sted ikke satt'}{event.distance ? ` · ${event.distance}` : ''}</p>
-      {!compact && <StatusPicker event={event} registrations={registrations} athletes={athletes} onStatus={onStatus} />}
-      {compact && <span className="registered-count">{registered} påmeldt</span>}
+    <div className="event-card-row">
+      <div className="event-date"><b>{formatDate(event.starts_at, { day: 'numeric' })}</b><span>{formatDate(event.starts_at, { month: 'short' })}</span></div>
+      <div className="event-info">
+        <div className="event-title-line"><span className={`type-dot ${eventTypes[event.type].color}`} /><h3>{event.title}</h3></div>
+        <p>{formatDate(event.starts_at, { weekday: 'short', hour: '2-digit', minute: '2-digit' })} · {event.location || 'Sted ikke satt'}{event.distance ? ` · ${event.distance}` : ''}</p>
+        {compact && <span className="registered-count">{registered} påmeldt</span>}
+      </div>
+      <div className="event-menu"><button aria-label={`Rediger ${event.title}`} onClick={onEdit}>Rediger</button><button className="delete" aria-label={`Slett ${event.title}`} onClick={onDelete}>×</button></div>
     </div>
-    <div className="event-menu"><button aria-label={`Rediger ${event.title}`} onClick={onEdit}>Rediger</button><button className="delete" aria-label={`Slett ${event.title}`} onClick={onDelete}>×</button></div>
+    {!compact && (
+      <div className="event-runners">
+        <button type="button" className="toggle-runners" onClick={() => setShowRunners((current) => !current)}>
+          {showRunners ? 'Skjul løpere' : 'Se løpere'} ({registered} av {athletes.length} påmeldt)
+        </button>
+        {showRunners && <StatusPicker event={event} registrations={registrations} athletes={athletes} onStatus={onStatus} />}
+      </div>
+    )}
   </article>
 }
 
