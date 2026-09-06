@@ -375,7 +375,7 @@ function StatusPicker({ event, registrations, athletes, onStatus }) {
   if (!athletes.length) return <p className="no-runners">Legg til løpere for å angi status.</p>
   return <div className="statuses">{athletes.map((athlete) => {
     const status = registrations.find((item) => item.athlete_id === athlete.id)?.status || 'undecided'
-    return <label key={athlete.id}><span className="avatar small" style={{ backgroundColor: athlete.color || '#4f7f9d' }}>{athlete.name.slice(0, 1)}</span>{athlete.name}<select value={status} onChange={(e) => onStatus(event.id, athlete.id, e.target.value)}>{Object.entries(statusLabels).map(([value, label]) => <option value={value} key={value}>{label}</option>)}</select></label>
+    return <label key={athlete.id}><span className="avatar small" style={{ backgroundColor: athlete.color || '#4f7f9d' }}>{athlete.name.slice(0, 1)}</span><span className="runner-name">{athlete.name}</span><select value={status} onChange={(e) => onStatus(event.id, athlete.id, e.target.value)}>{Object.entries(statusLabels).map(([value, label]) => <option value={value} key={value}>{label}</option>)}</select></label>
   })}</div>
 }
 

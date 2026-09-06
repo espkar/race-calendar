@@ -127,9 +127,11 @@ h1, h2, h3, p { margin-top: 0; } h1 { margin-bottom: 17px; font: 600 clamp(42px,
   .list-view .event-card p { font-size: 13px; line-height: 1.45; }
   .list-view .event-menu { gap: 2px; }
   .list-view .event-menu button { padding: 4px; font-size: 11px; }
-  .list-view .statuses { display: grid; grid-template-columns: 1fr; gap: 7px; }
-  .list-view .statuses label { justify-content: initial; min-height: 44px; padding: 5px 8px; font-size: 12px; }
-  .list-view .statuses select { width: auto; flex: 1; min-width: 0; font-size: 12px; }
+  .list-view .statuses { display: grid; grid-template-columns: 1fr; gap: 5px; }
+  .list-view .statuses label { justify-content: initial; min-height: 0; padding: 6px 8px; font-size: 11px; }
+  .list-view .statuses .avatar.small { flex: 0 0 20px; width: 20px; height: 20px; font-size: 9px; }
+  .list-view .statuses .runner-name { overflow: hidden; min-width: 0; text-overflow: ellipsis; white-space: nowrap; }
+  .list-view .statuses select { width: auto; flex: 1; min-width: 0; padding: 2px 4px; font-size: 11px; }
   .upcoming-grid { grid-template-columns: 1fr; }
   .upcoming-section { margin-top: 35px; }
   .modal-statuses .statuses { grid-template-columns: 1fr; }
