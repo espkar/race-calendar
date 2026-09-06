@@ -21,6 +21,18 @@ En responsiv, norsk felleskalender for løp og fellestreninger. Alle som åpner 
 
 Uten miljøvariablene starter appen med eksempeldata, slik at grensesnittet kan vurderes lokalt.
 
+## Forslag til andre løp
+
+Under kalenderen vises en seksjon, **«Forslag til andre løp»**, som henter aktuelle motbakke-/fjell-/trailløp fra eksterne kilder og filtrerer bort løp som allerede finnes i den manuelt vedlikeholdte kalenderen. Disse forslagene lagres aldri i Supabase – de hentes kun i minnet ved sidelasting. Bruker kan trykke **«Legg til»** for å åpne det vanlige arrangement-skjemaet, forhåndsutfylt med data fra forslaget.
+
+Kilden er forberedt for **EQ Timing**, men EQ Timing publiserer ikke noe dokumentert, offentlig API for å liste opp løp (siden er bygget som en påmeldings-/nettbutikkplattform for enkeltarrangementer, uten et "hent alle løp"-endepunkt eller CORS-støtte for nettleserkall). Adapteren i `src/raceSources/eqTiming.js` er derfor forberedt til å hente fra en valgfri, konfigurerbar feed:
+
+```text
+VITE_EQTIMING_FEED_URL=https://example.com/eqtiming-events.json
+```
+
+Er variabelen ikke satt, bidrar kilden ganske enkelt med null forslag – resten av appen fungerer som normalt. Samme mønster kan brukes til å koble på flere kilder senere (for eksempel Kondis' terminliste) ved å legge til en ny fil i `src/raceSources/` og registrere den i `src/raceSources/index.js`.
+
 ## GitHub Pages
 
 Workflowen i `.github/workflows/deploy.yml` publiserer ved push til `main`. I GitHub-repositoriet:

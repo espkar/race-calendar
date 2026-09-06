@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { isSupabaseConfigured, supabase } from './supabase'
+import RaceSuggestions from './components/RaceSuggestions'
 import './App.css'
 
 const statusLabels = {
@@ -243,6 +244,20 @@ function App() {
     document.querySelector('#calendar')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
+  function addSuggestedRace(race) {
+    const notesLines = [`Kilde: ${race.source}${race.sourceUrl ? ` (${race.sourceUrl})` : ''}`]
+    if (race.raceType) notesLines.push(`Type: ${race.raceType}`)
+    if (race.elevationGainM !== null && race.elevationGainM !== undefined) notesLines.push(`Stigning: ${race.elevationGainM} m`)
+    setEventForm({
+      ...emptyEvent,
+      title: race.name,
+      starts_at: `${race.date}T${race.startTime || '09:00'}`,
+      location: race.location || '',
+      distance: race.distanceKm != null ? `${race.distanceKm} km` : '',
+      notes: notesLines.join('\n'),
+    })
+  }
+
   return (
     <main className="app-shell">
       <header className="topbar">
@@ -318,6 +333,8 @@ function App() {
           )}
         </div>
       </section>
+
+      <RaceSuggestions existingEvents={events} onAdd={addSuggestedRace} />
 
       <section className="upcoming-section">
         <div className="section-heading"><div><p className="eyebrow">Neste på planen</p><h2>Kommende arrangementer</h2></div><button className="text-button" onClick={showList}>Se alle →</button></div>
