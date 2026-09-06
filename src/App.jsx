@@ -314,7 +314,7 @@ function App() {
                 })}
               </div>
           ) : (
-            <div className="list-view">{filteredEvents.map((event) => <EventCard key={event.id} event={event} registrations={registrationsFor(event.id)} athletes={athletes} onEdit={() => setEventForm({ ...event, starts_at: toLocalInput(event.starts_at) })} onDelete={() => deleteEvent(event.id)} onStatus={setStatus} />)}</div>
+            <div className="list-view">{filteredEvents.map((event) => <EventCard key={event.id} event={event} registrations={registrationsFor(event.id)} athletes={athletes} onEdit={() => setEventForm({ ...event, starts_at: toLocalInput(event.starts_at) })} onStatus={setStatus} />)}</div>
           )}
         </div>
       </section>
@@ -357,7 +357,7 @@ function RunnersModal({ athletes, athleteName, setAthleteName, onAdd, onRemove, 
   </section></div>
 }
 
-function EventCard({ event, registrations, athletes, onEdit, onDelete, onStatus, compact = false }) {
+function EventCard({ event, registrations, athletes, onEdit, onStatus, compact = false }) {
   const [showRunners, setShowRunners] = useState(false)
   const registered = registrations.filter((item) => item.status === 'registered').length
   return <article className={`event-card ${compact ? 'compact' : ''}`}>
@@ -368,7 +368,7 @@ function EventCard({ event, registrations, athletes, onEdit, onDelete, onStatus,
         <p>{formatDate(event.starts_at, { weekday: 'short', hour: '2-digit', minute: '2-digit' })} · {event.location || 'Sted ikke satt'}{event.distance ? ` · ${event.distance}` : ''}</p>
         {compact && <span className="registered-count">{registered} påmeldt</span>}
       </div>
-      <div className="event-menu"><button aria-label={`Rediger ${event.title}`} onClick={onEdit}>Rediger</button><button className="delete" aria-label={`Slett ${event.title}`} onClick={onDelete}>×</button></div>
+      <div className="event-menu"><button aria-label={`Rediger ${event.title}`} onClick={onEdit}>Rediger</button></div>
     </div>
     {!compact && (
       <div className="event-runners">
