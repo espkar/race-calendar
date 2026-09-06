@@ -110,7 +110,11 @@ h1, h2, h3, p { margin-top: 0; } h1 { margin-bottom: 17px; font: 600 clamp(42px,
   .hero { padding: 42px 0 27px; }
   .stats { justify-content: space-between; margin-top: 30px; }
   .stats div { min-width: 0; padding: 3px 10px; }
-  .calendar-controls { gap: 8px; align-items: start; flex-direction: column; }
+  .calendar-controls { gap: 8px; align-items: center; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .view-toggle { flex-shrink: 0; }
+  .view-toggle button { padding: 6px 8px; font-size: 11px; }
+  .event-filters { flex-shrink: 0; gap: 4px; }
+  .event-filters button { padding: 6px 9px; font-size: 11px; white-space: nowrap; }
   .calendar-panel .section-heading { gap: 12px; padding: 18px; }
   .calendar-panel .section-heading h2 { font-size: 25px; }
   .month-nav { flex-shrink: 0; }
