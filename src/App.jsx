@@ -64,8 +64,10 @@ function App() {
   const [events, setEvents] = useState(() => configured ? [] : demoEvents)
   const [registrations, setRegistrations] = useState([])
   const [view, setView] = useState('calendar')
+  const [typeFilter, setTypeFilter] = useState('all')
   const [month, setMonth] = useState(new Date(2026, 8, 1))
   const [eventForm, setEventForm] = useState(null)
+  const [showRunners, setShowRunners] = useState(false)
   const [athleteName, setAthleteName] = useState('')
   const [notice, setNotice] = useState('')
   const loadData = useCallback(async () => {
@@ -111,10 +113,14 @@ function App() {
     [events],
   )
 
-  const nextEvent = useMemo(
-    () => upcomingEvents.find((event) => new Date(event.starts_at) >= new Date()) || upcomingEvents[0],
+  const futureEvents = useMemo(
+    () => upcomingEvents.filter((event) => new Date(event.starts_at) >= new Date()),
     [upcomingEvents],
   )
+  const filteredEvents = typeFilter === 'all'
+    ? events
+    : events.filter((event) => event.type === typeFilter)
+  const registeredCount = registrations.filter((registration) => registration.status === 'registered').length
 
   async function addAthlete(event) {
     event.preventDefault()
@@ -161,9 +167,18 @@ function App() {
       notes: eventForm.notes || '',
     }
     if (!configured) {
-      setEvents((current) =>
-        eventForm.id ? current.map((item) => (item.id === eventForm.id ? values : item)) : [...current, { ...values, id: crypto.randomUUID() }],
-      )
+      const savedEvent = eventForm.id ? values : { ...values, id: crypto.randomUUID() }
+      setEvents((current) => eventForm.id
+        ? current.map((item) => (item.id === eventForm.id ? savedEvent : item))
+        : [...current, savedEvent])
+      setRegistrations((current) => [
+        ...current.filter((registration) => registration.event_id !== savedEvent.id),
+        ...Object.entries(savedEvent.statuses || {}).map(([athleteId, status]) => ({
+          event_id: savedEvent.id,
+          athlete_id: athleteId,
+          status: statusFromDatabase[status] || 'undecided',
+        })),
+      ])
     } else {
       const { id, starts_at, notes, type, ...rest } = values
       const payload = {
@@ -212,12 +227,21 @@ function App() {
     else loadData()
   }
 
-  const monthEvents = events.filter((event) =>
+  const monthEvents = filteredEvents.filter((event) =>
     new Date(event.starts_at).getMonth() === month.getMonth() &&
     new Date(event.starts_at).getFullYear() === month.getFullYear(),
   )
-  const calendarDays = Array.from({ length: new Date(month.getFullYear(), month.getMonth() + 1, 0).getDate() }, (_, index) => index + 1)
-  const blanks = (new Date(month.getFullYear(), month.getMonth(), 1).getDay() + 6) % 7
+  const calendarStart = new Date(month.getFullYear(), month.getMonth(), 1)
+  calendarStart.setDate(calendarStart.getDate() - ((calendarStart.getDay() + 6) % 7))
+  const calendarDays = Array.from({ length: 42 }, (_, index) => {
+    const date = new Date(calendarStart)
+    date.setDate(calendarStart.getDate() + index)
+    return date
+  })
+  const showList = () => {
+    setView('list')
+    document.querySelector('#calendar')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   return (
     <main className="app-shell">
@@ -227,86 +251,110 @@ function App() {
           <span>Race Calendar</span>
         </a>
         <div className="topbar-actions">
-          <span className="sync-indicator"><i /> {configured ? 'Delt kalender' : 'Demomodus'}</span>
+          <button className="team-link" onClick={() => setShowRunners(true)}>
+            <span>Løpegjengen</span>
+            <span className="team-avatars" aria-hidden="true">
+              {athletes.slice(0, 5).map((athlete) => <i key={athlete.id} style={{ backgroundColor: athlete.color || '#4f7f9d' }}>{athlete.initials || athlete.name.slice(0, 2).toUpperCase()}</i>)}
+            </span>
+          </button>
           <button className="primary-button" onClick={() => setEventForm({ ...emptyEvent })}>+ Nytt arrangement</button>
         </div>
       </header>
 
       <section className="hero" id="top">
         <div>
-          <p className="eyebrow">Løpekalender</p>
-          <h1>Planlegg løpene.<br /><em>Løp dem sammen.</em></h1>
-          <p className="intro">En felles oversikt over løp, treninger og hvem som blir med.</p>
+          <p className="eyebrow">Sesongen {month.getFullYear()}</p>
+          <h1>Hva skal vi løpe?</h1>
+          <p className="intro">Samle løp, treningsøkter og påmeldinger på ett sted.</p>
         </div>
-        <div className="hero-stat"><strong>{events.length}</strong><span>kommende<br />arrangementer</span></div>
+        <div className="stats">
+          <div><strong>{events.filter((event) => event.type === 'race').length}</strong><span>løp planlagt</span></div>
+          <div><strong>{registeredCount}</strong><span>påmeldinger</span></div>
+          <div><strong>{athletes.length}</strong><span>løpere</span></div>
+        </div>
       </section>
 
       {!configured && <aside className="setup-note">Viser eksempeldata. Legg inn <code>VITE_SUPABASE_URL</code> og <code>VITE_SUPABASE_ANON_KEY</code> i <code>.env.local</code> for delt lagring.</aside>}
       {notice && <div className="notice">{notice}<button onClick={() => setNotice('')}>×</button></div>}
 
-      {nextEvent && (
-        <section className="next-event">
-          <div className="next-event-label">
-            <span className={`type-dot ${eventTypes[nextEvent.type].color}`} />
-            <p className="eyebrow">Neste opp</p>
-          </div>
-          <div className="next-event-body">
-            <div className="next-event-date"><b>{formatDate(nextEvent.starts_at, { day: 'numeric' })}</b><span>{formatDate(nextEvent.starts_at, { month: 'short' })}</span></div>
-            <div className="next-event-info">
-              <h3>{nextEvent.title}</h3>
-              <p>{formatDate(nextEvent.starts_at, { weekday: 'long', hour: '2-digit', minute: '2-digit' })} · {nextEvent.location || 'Sted ikke satt'}{nextEvent.distance ? ` · ${nextEvent.distance}` : ''}</p>
-            </div>
-            <button className="secondary-button" onClick={() => setEventForm({ ...nextEvent, starts_at: toLocalInput(nextEvent.starts_at) })}>Se detaljer</button>
-          </div>
-        </section>
-      )}
+      <section className="calendar-controls" aria-label="Kalenderkontroller">
+        <div className="view-toggle" aria-label="Velg visning">
+          <button className={view === 'calendar' ? 'active' : ''} onClick={() => setView('calendar')}>Kalender</button>
+          <button className={view === 'list' ? 'active' : ''} onClick={() => setView('list')}>Liste</button>
+        </div>
+        <div className="event-filters">
+          <button className={typeFilter === 'all' ? 'active' : ''} onClick={() => setTypeFilter('all')}>Alle</button>
+          <button className={typeFilter === 'race' ? 'active' : ''} onClick={() => setTypeFilter('race')}>Løp</button>
+          <button className={typeFilter === 'training' ? 'active' : ''} onClick={() => setTypeFilter('training')}>Fellestrening</button>
+        </div>
+      </section>
 
-      <section className="content-grid">
+      <section className="content-grid" id="calendar">
         <div className="calendar-panel">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">Oversikt</p>
-              <h2>Kalender</h2>
+              <p className="eyebrow">Månedsoversikt</p>
+              <h2>{formatDate(month, { month: 'long', year: 'numeric' })}</h2>
             </div>
-            <div className="view-toggle" aria-label="Velg visning">
-              <button className={view === 'calendar' ? 'active' : ''} onClick={() => setView('calendar')}>Kalender</button>
-              <button className={view === 'list' ? 'active' : ''} onClick={() => setView('list')}>Liste</button>
+            <div className="month-nav">
+              <button aria-label="Forrige måned" onClick={() => setMonth(new Date(month.getFullYear(), month.getMonth() - 1, 1))}>←</button>
+              <button onClick={() => setMonth(new Date())}>I dag</button>
+              <button aria-label="Neste måned" onClick={() => setMonth(new Date(month.getFullYear(), month.getMonth() + 1, 1))}>→</button>
             </div>
           </div>
 
           {view === 'calendar' ? (
-            <>
-              <div className="month-nav">
-                <button aria-label="Forrige måned" onClick={() => setMonth(new Date(month.getFullYear(), month.getMonth() - 1, 1))}>←</button>
-                <strong>{formatDate(month, { month: 'long', year: 'numeric' })}</strong>
-                <button aria-label="Neste måned" onClick={() => setMonth(new Date(month.getFullYear(), month.getMonth() + 1, 1))}>→</button>
-              </div>
               <div className="calendar">
                 {['Man', 'Tir', 'Ons', 'Tor', 'Fre', 'Lør', 'Søn'].map((day) => <div className="weekday" key={day}>{day}</div>)}
-                {Array.from({ length: blanks }).map((_, index) => <div className="calendar-day empty" key={`blank-${index}`} />)}
                 {calendarDays.map((day) => {
-                  const dayEvents = monthEvents.filter((event) => new Date(event.starts_at).getDate() === day)
-                  return <div className="calendar-day" key={day}><span>{day}</span>{dayEvents.map((event) => <button className={`event-pill ${eventTypes[event.type].color}`} key={event.id} onClick={() => setEventForm({ ...event, starts_at: toLocalInput(event.starts_at) })}>{event.title}</button>)}</div>
+                  const dayEvents = monthEvents.filter((event) => new Date(event.starts_at).toDateString() === day.toDateString())
+                  const inCurrentMonth = day.getMonth() === month.getMonth()
+                  const isToday = day.toDateString() === new Date().toDateString()
+                  return <div className={`calendar-day ${inCurrentMonth ? '' : 'outside-month'}`} key={day.toISOString()}><span className={isToday ? 'today' : ''}>{day.getDate()}</span>{dayEvents.map((event) => <button className={`event-pill ${eventTypes[event.type].color}`} key={event.id} onClick={() => setEventForm({ ...event, starts_at: toLocalInput(event.starts_at) })}>{formatDate(event.starts_at, { hour: '2-digit', minute: '2-digit' })} {event.title}</button>)}</div>
                 })}
               </div>
-            </>
           ) : (
-            <div className="list-view">{upcomingEvents.map((event) => <EventCard key={event.id} event={event} registrations={registrationsFor(event.id)} athletes={athletes} onEdit={() => setEventForm({ ...event, starts_at: toLocalInput(event.starts_at) })} onDelete={() => deleteEvent(event.id)} onStatus={setStatus} />)}</div>
+            <div className="list-view">{filteredEvents.map((event) => <EventCard key={event.id} event={event} registrations={registrationsFor(event.id)} athletes={athletes} onEdit={() => setEventForm({ ...event, starts_at: toLocalInput(event.starts_at) })} onDelete={() => deleteEvent(event.id)} onStatus={setStatus} />)}</div>
           )}
         </div>
       </section>
 
-      <section className="runners-section">
-        <div className="section-heading"><div><p className="eyebrow">Laget</p><h2>Løpere</h2></div><span className="count-label">{athletes.length} i laget</span></div>
-        <div className="runners">
-          {athletes.map((athlete) => <div className="runner" key={athlete.id}><span className="avatar" style={{ backgroundColor: athlete.color || '#4f7f9d' }}>{athlete.name.slice(0, 1)}</span><span>{athlete.name}</span><button aria-label={`Fjern ${athlete.name}`} onClick={() => removeAthlete(athlete.id)}>×</button></div>)}
-          <form className="add-runner" onSubmit={addAthlete}><input value={athleteName} onChange={(event) => setAthleteName(event.target.value)} placeholder="Navn på løper" aria-label="Navn på løper" /><button>+ Legg til</button></form>
+      <section className="upcoming-section">
+        <div className="section-heading"><div><p className="eyebrow">Neste på planen</p><h2>Kommende arrangementer</h2></div><button className="text-button" onClick={showList}>Se alle →</button></div>
+        <div className="upcoming-grid">
+          {(futureEvents.length ? futureEvents : upcomingEvents).slice(0, 3).map((event) => <UpcomingCard key={event.id} event={event} registrations={registrationsFor(event.id)} athletes={athletes} onEdit={() => setEventForm({ ...event, starts_at: toLocalInput(event.starts_at) })} />)}
         </div>
       </section>
 
-      {eventForm && <EventModal form={eventForm} setForm={setEventForm} onSave={saveEvent} onClose={() => setEventForm(null)} />}
+      {eventForm && <EventModal form={eventForm} setForm={setEventForm} athletes={athletes} onSave={saveEvent} onDelete={eventForm.id ? () => { deleteEvent(eventForm.id); setEventForm(null) } : null} onClose={() => setEventForm(null)} />}
+      {showRunners && <RunnersModal athletes={athletes} athleteName={athleteName} setAthleteName={setAthleteName} onAdd={addAthlete} onRemove={removeAthlete} onClose={() => setShowRunners(false)} />}
     </main>
   )
+}
+
+function UpcomingCard({ event, registrations, athletes, onEdit }) {
+  const registered = registrations.filter((item) => item.status === 'registered').length
+  return <button className="upcoming-card" onClick={onEdit}>
+    <span className={`event-tag ${eventTypes[event.type].color}`}>{eventTypes[event.type].label}</span>
+    <time>{formatDate(event.starts_at, { day: 'numeric', month: 'long' })}</time>
+    <strong>{event.title}</strong>
+    <span className="upcoming-location">◎ {event.location || 'Sted ikke satt'}</span>
+    <span className="upcoming-details">◷ {formatDate(event.starts_at, { hour: '2-digit', minute: '2-digit' })}<b>{event.distance || '–'}</b></span>
+    <span className="upcoming-footer">{registered ? `${registered} påmeldt` : 'Ingen påmeldt'} <em>{registered} av {athletes.length} påmeldt</em></span>
+  </button>
+}
+
+function RunnersModal({ athletes, athleteName, setAthleteName, onAdd, onRemove, onClose }) {
+  return <div className="modal-backdrop" role="presentation"><section className="modal runners-modal" role="dialog" aria-modal="true" aria-labelledby="runners-modal-title">
+    <div className="modal-header"><div><p className="eyebrow">Laget</p><h2 id="runners-modal-title">Løpegjengen</h2></div><button className="icon-button" onClick={onClose} aria-label="Lukk">×</button></div>
+    <div className="runners-modal-content">
+      <p className="modal-description">Legg til eller fjern løpere fra den felles kalenderen.</p>
+      <div className="runner-list">
+        {athletes.map((athlete) => <div className="runner" key={athlete.id}><span className="avatar" style={{ backgroundColor: athlete.color || '#4f7f9d' }}>{athlete.initials || athlete.name.slice(0, 2).toUpperCase()}</span><span>{athlete.name}</span><button aria-label={`Fjern ${athlete.name}`} onClick={() => onRemove(athlete.id)}>×</button></div>)}
+      </div>
+      <form className="add-runner-modal" onSubmit={onAdd}><input value={athleteName} onChange={(event) => setAthleteName(event.target.value)} placeholder="Navn på løper" aria-label="Navn på løper" /><button className="primary-button">+ Legg til løper</button></form>
+    </div>
+  </section></div>
 }
 
 function EventCard({ event, registrations, athletes, onEdit, onDelete, onStatus, compact = false }) {
@@ -331,17 +379,31 @@ function StatusPicker({ event, registrations, athletes, onStatus }) {
   })}</div>
 }
 
-function EventModal({ form, setForm, onSave, onClose }) {
+function EventModal({ form, setForm, athletes, onSave, onDelete, onClose }) {
   const edit = Boolean(form.id)
   const update = (field, value) => setForm((current) => ({ ...current, [field]: value }))
-  return <div className="modal-backdrop" role="presentation"><section className="modal" role="dialog" aria-modal="true" aria-labelledby="event-modal-title">
+  const [date = '', time = ''] = (form.starts_at || 'T').split('T')
+  const updateDateTime = (part, value) => update('starts_at', `${part === 'date' ? value : date}T${part === 'time' ? value : time}`)
+  const updateStatus = (athleteId, status) => setForm((current) => ({
+    ...current,
+    statuses: { ...(current.statuses || {}), [athleteId]: databaseStatus[status] },
+  }))
+  return <div className="modal-backdrop" role="presentation"><section className="modal event-modal" role="dialog" aria-modal="true" aria-labelledby="event-modal-title">
     <div className="modal-header"><div><p className="eyebrow">{edit ? 'Endre arrangement' : 'Nytt arrangement'}</p><h2 id="event-modal-title">{edit ? form.title : 'Legg til i kalenderen'}</h2></div><button className="icon-button" onClick={onClose}>×</button></div>
     <form onSubmit={onSave}>
       <label>Navn<input required value={form.title} onChange={(e) => update('title', e.target.value)} placeholder="For eksempel: Sentrumsløpet" /></label>
-      <div className="field-row"><label>Type<select value={form.type} onChange={(e) => update('type', e.target.value)}><option value="race">Løp</option><option value="training">Fellestrening</option></select></label><label>Dato og tid<input required type="datetime-local" value={form.starts_at} onChange={(e) => update('starts_at', e.target.value)} /></label></div>
-      <div className="field-row"><label>Sted<input value={form.location || ''} onChange={(e) => update('location', e.target.value)} /></label><label>Distanse / økt<input value={form.distance || ''} onChange={(e) => update('distance', e.target.value)} placeholder="10 km" /></label></div>
+      <div className="field-row"><label>Type<select value={form.type} onChange={(e) => update('type', e.target.value)}><option value="race">Løp</option><option value="training">Fellestrening</option></select></label><label>Distanse / økt<input value={form.distance || ''} onChange={(e) => update('distance', e.target.value)} placeholder="10 km" /></label></div>
+      <div className="field-row"><label>Dato<input required type="date" value={date} onChange={(e) => updateDateTime('date', e.target.value)} /></label><label>Tid<input required type="time" value={time} onChange={(e) => updateDateTime('time', e.target.value)} /></label></div>
+      <label>Sted<input value={form.location || ''} onChange={(e) => update('location', e.target.value)} /></label>
       <label>Notater (valgfritt)<textarea value={form.notes || ''} onChange={(e) => update('notes', e.target.value)} rows="3" /></label>
-      <div className="modal-actions"><button type="button" className="secondary-button" onClick={onClose}>Avbryt</button><button className="primary-button">{edit ? 'Lagre endringer' : 'Opprett arrangement'}</button></div>
+      <div className="modal-statuses">
+        <p>Hvem blir med?</p>
+        <div className="statuses">{athletes.map((athlete) => {
+          const status = statusFromDatabase[form.statuses?.[athlete.id]] || 'undecided'
+          return <label key={athlete.id}><span className="avatar small" style={{ backgroundColor: athlete.color || '#4f7f9d' }}>{athlete.initials || athlete.name.slice(0, 1)}</span><span>{athlete.name}</span><select value={status} onChange={(event) => updateStatus(athlete.id, event.target.value)}>{Object.entries(statusLabels).map(([value, label]) => <option value={value} key={value}>{label}</option>)}</select></label>
+        })}</div>
+      </div>
+      <div className="modal-actions">{onDelete && <button type="button" className="delete-button" onClick={onDelete}>Slett</button>}<span /><button type="button" className="secondary-button" onClick={onClose}>Avbryt</button><button className="primary-button">{edit ? 'Lagre arrangement' : 'Opprett arrangement'}</button></div>
     </form>
   </section></div>
 }
