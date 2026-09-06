@@ -1,12 +1,12 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-06T12:54:45.864Z",
+  "updatedAt": "2026-09-06T13:21:44.925Z",
   "events": [
     {
-      "id": "eq-timing:ok26:-5.-løp-jaktstart:2026-09-05",
+      "id": "eq-timing:ok26:-5.-løp-jaktstart:2026-09-06",
       "name": "OK26: 5. løp Jaktstart",
-      "date": "2026-09-05",
-      "startTime": "00:00",
+      "date": "2026-09-06",
+      "startTime": null,
       "location": "Oppdalslinna 401",
       "distanceKm": 4.75,
       "elevationGainM": null,
@@ -16,10 +16,10 @@
       "registrationUrl": "https://www.webscorer.com/register?raceid=414293"
     },
     {
-      "id": "eq-timing:emblemsfjellet-opp-2026:2026-09-05",
+      "id": "eq-timing:emblemsfjellet-opp-2026:2026-09-06",
       "name": "Emblemsfjellet opp 2026",
-      "date": "2026-09-05",
-      "startTime": "00:00",
+      "date": "2026-09-06",
+      "startTime": null,
       "location": "Emblem",
       "distanceKm": 7.5,
       "elevationGainM": null,
@@ -29,10 +29,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:i-heiane-båden:2026-09-05",
+      "id": "eq-timing:i-heiane-båden:2026-09-06",
       "name": "i Heiane Båden",
-      "date": "2026-09-05",
-      "startTime": "00:00",
+      "date": "2026-09-06",
+      "startTime": null,
       "location": "Kristiansand",
       "distanceKm": 5,
       "elevationGainM": null,
@@ -42,10 +42,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:sprinklet-opp:2026-09-05",
+      "id": "eq-timing:sprinklet-opp:2026-09-06",
       "name": "Sprinklet Opp",
-      "date": "2026-09-05",
-      "startTime": "00:00",
+      "date": "2026-09-06",
+      "startTime": null,
       "location": "Fredrikstad",
       "distanceKm": 1.5,
       "elevationGainM": null,
@@ -55,10 +55,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:markakarusellen-5-km-(andre)-høst-2026:2026-09-07",
+      "id": "eq-timing:markakarusellen-5-km-(andre)-høst-2026:2026-09-08",
       "name": "Markakarusellen 5 km (andre) høst 2026",
-      "date": "2026-09-07",
-      "startTime": "00:00",
+      "date": "2026-09-08",
+      "startTime": null,
       "location": "Spiraltoppen",
       "distanceKm": 5,
       "elevationGainM": null,
@@ -107,10 +107,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:ringvål-10-sep,-terrengkarusellen-2026:2026-09-09",
+      "id": "eq-timing:ringvål-10-sep,-terrengkarusellen-2026:2026-09-10",
       "name": "Ringvål 10 sep, Terrengkarusellen 2026",
-      "date": "2026-09-09",
-      "startTime": "00:00",
+      "date": "2026-09-10",
+      "startTime": null,
       "location": "Trondheim",
       "distanceKm": null,
       "elevationGainM": null,
@@ -120,10 +120,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:spåkefjellet-opp-2026:2026-09-11",
+      "id": "eq-timing:spåkefjellet-opp-2026:2026-09-12",
       "name": "Spåkefjellet Opp 2026",
-      "date": "2026-09-11",
-      "startTime": "00:00",
+      "date": "2026-09-12",
+      "startTime": null,
       "location": "Arna Stadion",
       "distanceKm": 0.1,
       "elevationGainM": null,
@@ -133,10 +133,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:kongskleiven-opp-2026:2026-09-11",
+      "id": "eq-timing:kongskleiven-opp-2026:2026-09-12",
       "name": "Kongskleiven Opp 2026",
-      "date": "2026-09-11",
-      "startTime": "00:00",
+      "date": "2026-09-12",
+      "startTime": null,
       "location": "Austevoll Idrettsanlegg",
       "distanceKm": null,
       "elevationGainM": null,
@@ -172,10 +172,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:torvikbukt-6-topper-2026:2026-09-11",
+      "id": "eq-timing:torvikbukt-6-topper-2026:2026-09-12",
       "name": "Torvikbukt 6 topper 2026",
-      "date": "2026-09-11",
-      "startTime": "00:00",
+      "date": "2026-09-12",
+      "startTime": null,
       "location": "Torvikbukt",
       "distanceKm": 9,
       "elevationGainM": null,
@@ -198,10 +198,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:skarsteinsetra-opp-2026:2026-09-11",
+      "id": "eq-timing:skarsteinsetra-opp-2026:2026-09-12",
       "name": "Skarsteinsetra Opp 2026",
-      "date": "2026-09-11",
-      "startTime": "00:00",
+      "date": "2026-09-12",
+      "startTime": null,
       "location": "Olden",
       "distanceKm": 5,
       "elevationGainM": null,
@@ -224,10 +224,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:galdane-rundt-2026:2026-09-11",
+      "id": "eq-timing:galdane-rundt-2026:2026-09-12",
       "name": "Galdane Rundt 2026",
-      "date": "2026-09-11",
-      "startTime": "00:00",
+      "date": "2026-09-12",
+      "startTime": null,
       "location": "Lærdal",
       "distanceKm": 8.7,
       "elevationGainM": null,
@@ -237,10 +237,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:seterløpet-2026:2026-09-12",
+      "id": "eq-timing:seterløpet-2026:2026-09-13",
       "name": "Seterløpet 2026",
-      "date": "2026-09-12",
-      "startTime": "00:00",
+      "date": "2026-09-13",
+      "startTime": null,
       "location": "Formolaupet 29",
       "distanceKm": 19,
       "elevationGainM": null,
@@ -250,10 +250,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:skogsløpet-mosviksenderen-rundt_kopi:2026-09-12",
+      "id": "eq-timing:skogsløpet-mosviksenderen-rundt_kopi:2026-09-13",
       "name": "SKOGSLØPET MOSVIKSENDEREN RUNDT_kopi",
-      "date": "2026-09-12",
-      "startTime": "00:00",
+      "date": "2026-09-13",
+      "startTime": null,
       "location": "Mosvik",
       "distanceKm": null,
       "elevationGainM": null,
@@ -302,10 +302,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:markakarusellen-3-km-(andre)-høst-2026:2026-09-14",
+      "id": "eq-timing:markakarusellen-3-km-(andre)-høst-2026:2026-09-15",
       "name": "Markakarusellen 3 km (andre) høst 2026",
-      "date": "2026-09-14",
-      "startTime": "00:00",
+      "date": "2026-09-15",
+      "startTime": null,
       "location": "Spiraltoppen",
       "distanceKm": 3,
       "elevationGainM": null,
@@ -328,9 +328,9 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:flatmoenløpet-høst-2026:2026-09-14",
+      "id": "eq-timing:flatmoenløpet-høst-2026:2026-09-15",
       "name": "Flatmoenløpet høst 2026",
-      "date": "2026-09-14",
+      "date": "2026-09-15",
       "startTime": "01:00",
       "location": "Flatmoen idrettspark",
       "distanceKm": 0.4,
@@ -341,10 +341,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:ulsrudvann-rundt-6.-løp-2026:2026-09-16",
+      "id": "eq-timing:ulsrudvann-rundt-6.-løp-2026:2026-09-17",
       "name": "Ulsrudvann Rundt 6. løp 2026",
-      "date": "2026-09-16",
-      "startTime": "00:00",
+      "date": "2026-09-17",
+      "startTime": null,
       "location": "Ulsrudvann, Oslo",
       "distanceKm": 2.87,
       "elevationGainM": null,
@@ -354,10 +354,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:ulvøyløpet-2026:2026-09-18",
+      "id": "eq-timing:ulvøyløpet-2026:2026-09-19",
       "name": "Ulvøyløpet 2026",
-      "date": "2026-09-18",
-      "startTime": "00:00",
+      "date": "2026-09-19",
+      "startTime": null,
       "location": "Stokmarknes",
       "distanceKm": 26,
       "elevationGainM": null,
@@ -380,10 +380,10 @@
       "registrationUrl": "https://racetracker.no/events/2026/muruvik-backyard/"
     },
     {
-      "id": "eq-timing:oppdalsløpet-2026:2026-09-18",
+      "id": "eq-timing:oppdalsløpet-2026:2026-09-19",
       "name": "Oppdalsløpet 2026",
-      "date": "2026-09-18",
-      "startTime": "00:00",
+      "date": "2026-09-19",
+      "startTime": null,
       "location": "Oppdalslinna 401",
       "distanceKm": 3.6,
       "elevationGainM": null,
@@ -393,10 +393,10 @@
       "registrationUrl": "https://www.webscorer.com/register?raceid=411724"
     },
     {
-      "id": "eq-timing:hvalermila-2026:2026-09-18",
+      "id": "eq-timing:hvalermila-2026:2026-09-19",
       "name": "Hvalermila 2026",
-      "date": "2026-09-18",
-      "startTime": "00:00",
+      "date": "2026-09-19",
+      "startTime": null,
       "location": "Skjærhalden, Hvaler",
       "distanceKm": 10,
       "elevationGainM": null,
@@ -406,10 +406,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:hydro-rundt-2026:2026-09-18",
+      "id": "eq-timing:hydro-rundt-2026:2026-09-19",
       "name": "Hydro Rundt 2026",
-      "date": "2026-09-18",
-      "startTime": "00:00",
+      "date": "2026-09-19",
+      "startTime": null,
       "location": "Torget, Øvre Årdal",
       "distanceKm": 7,
       "elevationGainM": null,
@@ -419,10 +419,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:bondespretten---2026:2026-09-18",
+      "id": "eq-timing:bondespretten---2026:2026-09-19",
       "name": "Bondespretten - 2026",
-      "date": "2026-09-18",
-      "startTime": "00:00",
+      "date": "2026-09-19",
+      "startTime": null,
       "location": "Etne Senter",
       "distanceKm": 8,
       "elevationGainM": null,
@@ -445,10 +445,10 @@
       "registrationUrl": "http://register.hauern.no/"
     },
     {
-      "id": "eq-timing:håen-rundt-2026:2026-09-18",
+      "id": "eq-timing:håen-rundt-2026:2026-09-19",
       "name": "Håen Rundt 2026",
-      "date": "2026-09-18",
-      "startTime": "00:00",
+      "date": "2026-09-19",
+      "startTime": null,
       "location": "Håen",
       "distanceKm": 11,
       "elevationGainM": null,
@@ -471,10 +471,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:kringsjå-opp-2026:2026-09-19",
+      "id": "eq-timing:kringsjå-opp-2026:2026-09-20",
       "name": "Kringsjå Opp 2026",
-      "date": "2026-09-19",
-      "startTime": "00:00",
+      "date": "2026-09-20",
+      "startTime": null,
       "location": "Haugesund",
       "distanceKm": 2.2,
       "elevationGainM": null,
@@ -484,10 +484,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:jungerløpet-2026:2026-09-19",
+      "id": "eq-timing:jungerløpet-2026:2026-09-20",
       "name": "Jungerløpet 2026",
-      "date": "2026-09-19",
-      "startTime": "00:00",
+      "date": "2026-09-20",
+      "startTime": null,
       "location": "Vestfossen",
       "distanceKm": 8,
       "elevationGainM": null,
@@ -497,10 +497,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:karl-xiis-løp-2026:2026-09-19",
+      "id": "eq-timing:karl-xiis-løp-2026:2026-09-20",
       "name": "Karl XIIs løp 2026",
-      "date": "2026-09-19",
-      "startTime": "00:00",
+      "date": "2026-09-20",
+      "startTime": null,
       "location": "Halden",
       "distanceKm": 5,
       "elevationGainM": null,
@@ -510,10 +510,10 @@
       "registrationUrl": "https://www.racedays.run/event/karl-xii-lopet-2026"
     },
     {
-      "id": "eq-timing:fagerheikongen-20.9-2026:2026-09-19",
+      "id": "eq-timing:fagerheikongen-20.9-2026:2026-09-20",
       "name": "Fagerheikongen 20.9 2026",
-      "date": "2026-09-19",
-      "startTime": "00:00",
+      "date": "2026-09-20",
+      "startTime": null,
       "location": "Lyngmyr stadion",
       "distanceKm": 24,
       "elevationGainM": null,
@@ -536,10 +536,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:i-heiane-redalsheia:2026-09-19",
+      "id": "eq-timing:i-heiane-redalsheia:2026-09-20",
       "name": "i Heiane Redalsheia",
-      "date": "2026-09-19",
-      "startTime": "00:00",
+      "date": "2026-09-20",
+      "startTime": null,
       "location": "Kristiansand",
       "distanceKm": 5,
       "elevationGainM": null,
@@ -549,10 +549,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:voss-løpskarusell-2026,-løp-6:2026-09-20",
+      "id": "eq-timing:voss-løpskarusell-2026,-løp-6:2026-09-21",
       "name": "Voss Løpskarusell  2026, løp 6",
-      "date": "2026-09-20",
-      "startTime": "00:00",
+      "date": "2026-09-21",
+      "startTime": null,
       "location": "Voss Idrettsplass",
       "distanceKm": 5,
       "elevationGainM": null,
@@ -562,10 +562,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:gt-karusellen-2026-løp-9-lauvhøgda-opp:2026-09-21",
+      "id": "eq-timing:gt-karusellen-2026-løp-9-lauvhøgda-opp:2026-09-22",
       "name": "GT karusellen 2026 løp 9 Lauvhøgda opp",
-      "date": "2026-09-21",
-      "startTime": "00:00",
+      "date": "2026-09-22",
+      "startTime": null,
       "location": "Lauvhøgda",
       "distanceKm": 0.8,
       "elevationGainM": null,
@@ -575,10 +575,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:aron-opp-tirsdag-22.09.26:2026-09-21",
+      "id": "eq-timing:aron-opp-tirsdag-22.09.26:2026-09-22",
       "name": "Aron Opp tirsdag 22.09.26",
-      "date": "2026-09-21",
-      "startTime": "00:00",
+      "date": "2026-09-22",
+      "startTime": null,
       "location": "Drammen",
       "distanceKm": 1.7,
       "elevationGainM": null,
@@ -601,10 +601,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:stoltzekleiven-opp-2026:2026-09-24",
+      "id": "eq-timing:stoltzekleiven-opp-2026:2026-09-25",
       "name": "Stoltzekleiven Opp 2026",
-      "date": "2026-09-24",
-      "startTime": "00:00",
+      "date": "2026-09-25",
+      "startTime": null,
       "location": "Bergen",
       "distanceKm": null,
       "elevationGainM": null,
@@ -614,10 +614,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:nattland-backyard-ultra-2026:2026-09-25",
+      "id": "eq-timing:nattland-backyard-ultra-2026:2026-09-26",
       "name": "Nattland Backyard Ultra 2026",
-      "date": "2026-09-25",
-      "startTime": "00:00",
+      "date": "2026-09-26",
+      "startTime": null,
       "location": "Nattlandsfjellet",
       "distanceKm": null,
       "elevationGainM": null,
@@ -627,10 +627,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:gaia-backyard---hafjell-2026:2026-09-25",
+      "id": "eq-timing:gaia-backyard---hafjell-2026:2026-09-26",
       "name": "Gaia Backyard - Hafjell 2026",
-      "date": "2026-09-25",
-      "startTime": "00:00",
+      "date": "2026-09-26",
+      "startTime": null,
       "location": "Hafjell Gaiastova",
       "distanceKm": null,
       "elevationGainM": null,
@@ -640,10 +640,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:km-terrengløp-troms:2026-09-25",
+      "id": "eq-timing:km-terrengløp-troms:2026-09-26",
       "name": "KM Terrengløp Troms",
-      "date": "2026-09-25",
-      "startTime": "00:00",
+      "date": "2026-09-26",
+      "startTime": null,
       "location": "Storlømyra",
       "distanceKm": 3,
       "elevationGainM": null,
@@ -666,10 +666,10 @@
       "registrationUrl": "https://signup.eqtiming.com/?Event=hortensmarkarundt"
     },
     {
-      "id": "eq-timing:viljar-backyard-ultra-2026:2026-09-25",
+      "id": "eq-timing:viljar-backyard-ultra-2026:2026-09-26",
       "name": "Viljar BackYard Ultra 2026",
-      "date": "2026-09-25",
-      "startTime": "00:00",
+      "date": "2026-09-26",
+      "startTime": null,
       "location": "Bømoen",
       "distanceKm": null,
       "elevationGainM": null,
@@ -679,10 +679,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:km-terrengløp-lang-løype:2026-09-25",
+      "id": "eq-timing:km-terrengløp-lang-løype:2026-09-26",
       "name": "KM Terrengløp lang løype",
-      "date": "2026-09-25",
-      "startTime": "00:00",
+      "date": "2026-09-26",
+      "startTime": null,
       "location": "Ørin, Verdal",
       "distanceKm": 6,
       "elevationGainM": null,
@@ -731,10 +731,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:skistua-opp-#3-2026:2026-09-27",
+      "id": "eq-timing:skistua-opp-#3-2026:2026-09-28",
       "name": "Skistua opp #3-2026",
-      "date": "2026-09-27",
-      "startTime": "00:00",
+      "date": "2026-09-28",
+      "startTime": null,
       "location": "Tynset",
       "distanceKm": 3.5,
       "elevationGainM": null,
@@ -744,9 +744,9 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:nesbyen-backyard:2026-10-02",
+      "id": "eq-timing:nesbyen-backyard:2026-10-03",
       "name": "Nesbyen Backyard",
-      "date": "2026-10-02",
+      "date": "2026-10-03",
       "startTime": "00:09",
       "location": "Nesbyen Idrettshall",
       "distanceKm": 80.4,
@@ -757,10 +757,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:tromsø-backyard-ultra-2026:2026-10-02",
+      "id": "eq-timing:tromsø-backyard-ultra-2026:2026-10-03",
       "name": "Tromsø Backyard Ultra 2026",
-      "date": "2026-10-02",
-      "startTime": "00:00",
+      "date": "2026-10-03",
+      "startTime": null,
       "location": "Tromsø",
       "distanceKm": 6.7,
       "elevationGainM": null,
@@ -796,10 +796,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:hovdenuten-opp-2026:2026-10-02",
+      "id": "eq-timing:hovdenuten-opp-2026:2026-10-03",
       "name": "Hovdenuten Opp 2026",
-      "date": "2026-10-02",
-      "startTime": "00:00",
+      "date": "2026-10-03",
+      "startTime": null,
       "location": "Hovden",
       "distanceKm": null,
       "elevationGainM": null,
@@ -822,10 +822,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:vierli-opp-2026:2026-10-02",
+      "id": "eq-timing:vierli-opp-2026:2026-10-03",
       "name": "Vierli Opp 2026",
-      "date": "2026-10-02",
-      "startTime": "00:00",
+      "date": "2026-10-03",
+      "startTime": null,
       "location": "Vierli",
       "distanceKm": null,
       "elevationGainM": null,
@@ -835,10 +835,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:vardafjellet-opp-2026:2026-10-02",
+      "id": "eq-timing:vardafjellet-opp-2026:2026-10-03",
       "name": "Vardafjellet opp 2026",
-      "date": "2026-10-02",
-      "startTime": "00:00",
+      "date": "2026-10-03",
+      "startTime": null,
       "location": "Haugesund",
       "distanceKm": null,
       "elevationGainM": null,
@@ -848,10 +848,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:i-heiane-oddersjaa:2026-10-03",
+      "id": "eq-timing:i-heiane-oddersjaa:2026-10-04",
       "name": "i Heiane Oddersjaa",
-      "date": "2026-10-03",
-      "startTime": "00:00",
+      "date": "2026-10-04",
+      "startTime": null,
       "location": "Kristiansand",
       "distanceKm": 5,
       "elevationGainM": null,
@@ -861,10 +861,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:bul-løpet-2026:2026-10-09",
+      "id": "eq-timing:bul-løpet-2026:2026-10-10",
       "name": "BUL-Løpet 2026",
-      "date": "2026-10-09",
-      "startTime": "00:00",
+      "date": "2026-10-10",
+      "startTime": null,
       "location": "Alta",
       "distanceKm": 5,
       "elevationGainM": null,
@@ -874,10 +874,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:furumomila-2026:2026-10-09",
+      "id": "eq-timing:furumomila-2026:2026-10-10",
       "name": "Furumomila 2026",
-      "date": "2026-10-09",
-      "startTime": "00:00",
+      "date": "2026-10-10",
+      "startTime": null,
       "location": "Furumo Idrettspark",
       "distanceKm": 10,
       "elevationGainM": null,
@@ -900,10 +900,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:hamar-backyard-ultra-50m-2026:2026-10-09",
+      "id": "eq-timing:hamar-backyard-ultra-50m-2026:2026-10-10",
       "name": "Hamar Backyard Ultra 50M 2026",
-      "date": "2026-10-09",
-      "startTime": "00:00",
+      "date": "2026-10-10",
+      "startTime": null,
       "location": "Prestrudhallen, Hamar",
       "distanceKm": 80.467,
       "elevationGainM": null,
@@ -913,10 +913,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:kystløpet-2026:2026-10-09",
+      "id": "eq-timing:kystløpet-2026:2026-10-10",
       "name": "Kystløpet 2026",
-      "date": "2026-10-09",
-      "startTime": "00:00",
+      "date": "2026-10-10",
+      "startTime": null,
       "location": "Egersund",
       "distanceKm": null,
       "elevationGainM": null,
@@ -926,10 +926,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:musdal-opp-2026:2026-10-09",
+      "id": "eq-timing:musdal-opp-2026:2026-10-10",
       "name": "Musdal opp 2026",
-      "date": "2026-10-09",
-      "startTime": "00:00",
+      "date": "2026-10-10",
+      "startTime": null,
       "location": "Øyer",
       "distanceKm": null,
       "elevationGainM": null,
@@ -939,10 +939,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:terrengløpet-mila-2026:2026-10-09",
+      "id": "eq-timing:terrengløpet-mila-2026:2026-10-10",
       "name": "Terrengløpet Mila 2026",
-      "date": "2026-10-09",
-      "startTime": "00:00",
+      "date": "2026-10-10",
+      "startTime": null,
       "location": "Trøgstad",
       "distanceKm": null,
       "elevationGainM": null,
@@ -965,10 +965,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:nm-terrengløp-lang-løype:2026-10-09",
+      "id": "eq-timing:nm-terrengløp-lang-løype:2026-10-10",
       "name": "NM Terrengløp Lang Løype",
-      "date": "2026-10-09",
-      "startTime": "00:00",
+      "date": "2026-10-10",
+      "startTime": null,
       "location": "Bokemoa",
       "distanceKm": 3,
       "elevationGainM": null,
@@ -978,10 +978,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:elgløpet-2026:2026-10-10",
+      "id": "eq-timing:elgløpet-2026:2026-10-11",
       "name": "Elgløpet 2026",
-      "date": "2026-10-10",
-      "startTime": "00:00",
+      "date": "2026-10-11",
+      "startTime": null,
       "location": "Høland Stadion",
       "distanceKm": 10,
       "elevationGainM": null,
@@ -991,10 +991,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:volda-bakgårdsultra-2026:2026-10-16",
+      "id": "eq-timing:volda-bakgårdsultra-2026:2026-10-17",
       "name": "Volda Bakgårdsultra 2026",
-      "date": "2026-10-16",
-      "startTime": "00:00",
+      "date": "2026-10-17",
+      "startTime": null,
       "location": "Volda",
       "distanceKm": 7,
       "elevationGainM": null,
@@ -1017,10 +1017,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:moaløpet-2026-mini-moa:2026-10-16",
+      "id": "eq-timing:moaløpet-2026-mini-moa:2026-10-17",
       "name": "Moaløpet 2026 Mini-Moa",
-      "date": "2026-10-16",
-      "startTime": "00:00",
+      "date": "2026-10-17",
+      "startTime": null,
       "location": "Stokke, Bokemoa",
       "distanceKm": 0.5,
       "elevationGainM": null,
@@ -1030,10 +1030,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:hundvågløpet-2026:2026-10-16",
+      "id": "eq-timing:hundvågløpet-2026:2026-10-17",
       "name": "Hundvågløpet 2026",
-      "date": "2026-10-16",
-      "startTime": "00:00",
+      "date": "2026-10-17",
+      "startTime": null,
       "location": "Hundvåg stadion",
       "distanceKm": 5,
       "elevationGainM": null,
@@ -1056,10 +1056,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:neskollen-frontyard-2026:2026-10-17",
+      "id": "eq-timing:neskollen-frontyard-2026:2026-10-18",
       "name": "Neskollen Frontyard 2026",
-      "date": "2026-10-17",
-      "startTime": "00:00",
+      "date": "2026-10-18",
+      "startTime": null,
       "location": "Nes Arena",
       "distanceKm": 3,
       "elevationGainM": null,
@@ -1069,10 +1069,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:driv-karusell-2026_3.løp,-18.10.2026:2026-10-17",
+      "id": "eq-timing:driv-karusell-2026_3.løp,-18.10.2026:2026-10-18",
       "name": "Driv Karusell 2026_3.Løp, 18.10.2026",
-      "date": "2026-10-17",
-      "startTime": "00:00",
+      "date": "2026-10-18",
+      "startTime": null,
       "location": "Drivplassen Enebakk",
       "distanceKm": 0.4,
       "elevationGainM": null,
@@ -1082,10 +1082,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:gråkallen-opp-2026:2026-10-17",
+      "id": "eq-timing:gråkallen-opp-2026:2026-10-18",
       "name": "Gråkallen Opp 2026",
-      "date": "2026-10-17",
-      "startTime": "00:00",
+      "date": "2026-10-18",
+      "startTime": null,
       "location": "Ila, Trondheim",
       "distanceKm": 7.5,
       "elevationGainM": null,
@@ -1095,10 +1095,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:i-heiane-førstemann-til-båden:2026-10-17",
+      "id": "eq-timing:i-heiane-førstemann-til-båden:2026-10-18",
       "name": "i Heiane Førstemann til Båden",
-      "date": "2026-10-17",
-      "startTime": "00:00",
+      "date": "2026-10-18",
+      "startTime": null,
       "location": "Kristiansand",
       "distanceKm": 5,
       "elevationGainM": null,
@@ -1108,10 +1108,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:arctic-alta-backyard-2026:2026-10-23",
+      "id": "eq-timing:arctic-alta-backyard-2026:2026-10-24",
       "name": "Arctic Alta Backyard 2026",
-      "date": "2026-10-23",
-      "startTime": "00:00",
+      "date": "2026-10-24",
+      "startTime": null,
       "location": "Tverrelvdalen",
       "distanceKm": 80.4,
       "elevationGainM": null,
@@ -1134,10 +1134,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:driv-karusell-2026_4.løp,-25.10.2026:2026-10-24",
+      "id": "eq-timing:driv-karusell-2026_4.løp,-25.10.2026:2026-10-25",
       "name": "Driv Karusell 2026_4.Løp, 25.10.2026",
-      "date": "2026-10-24",
-      "startTime": "00:00",
+      "date": "2026-10-25",
+      "startTime": null,
       "location": "Drivplassen Enebakk",
       "distanceKm": 1.2,
       "elevationGainM": null,
@@ -1147,10 +1147,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:hålandsheia-rundt:2026-10-30",
+      "id": "eq-timing:hålandsheia-rundt:2026-10-31",
       "name": "Hålandsheia Rundt",
-      "date": "2026-10-30",
-      "startTime": "00:00",
+      "date": "2026-10-31",
+      "startTime": null,
       "location": null,
       "distanceKm": null,
       "elevationGainM": null,
@@ -1173,10 +1173,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:martincrossen-trail-run:2026-11-03",
+      "id": "eq-timing:martincrossen-trail-run:2026-11-04",
       "name": "Martincrossen Trail Run",
-      "date": "2026-11-03",
-      "startTime": "00:00",
+      "date": "2026-11-04",
+      "startTime": null,
       "location": "Voksenjordet",
       "distanceKm": 1,
       "elevationGainM": null,
@@ -1186,10 +1186,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:morothon-2026:2026-11-06",
+      "id": "eq-timing:morothon-2026:2026-11-07",
       "name": "Morothon 2026",
-      "date": "2026-11-06",
-      "startTime": "00:00",
+      "date": "2026-11-07",
+      "startTime": null,
       "location": "Søgne",
       "distanceKm": 20,
       "elevationGainM": null,
@@ -1212,10 +1212,10 @@
       "registrationUrl": "https://secure.onreg.com/onreg2/front/step1.php?id=6531"
     },
     {
-      "id": "eq-timing:fedrelandet-backyard:2026-11-05",
+      "id": "eq-timing:fedrelandet-backyard:2026-11-06",
       "name": "Fedrelandet Backyard",
-      "date": "2026-11-05",
-      "startTime": "00:00",
+      "date": "2026-11-06",
+      "startTime": null,
       "location": "Fetsund",
       "distanceKm": null,
       "elevationGainM": null,
@@ -1225,10 +1225,10 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:motbakkeløpet-2026:2026-11-10",
+      "id": "eq-timing:motbakkeløpet-2026:2026-11-11",
       "name": "Motbakkeløpet 2026",
-      "date": "2026-11-10",
-      "startTime": "00:00",
+      "date": "2026-11-11",
+      "startTime": null,
       "location": "Bergen",
       "distanceKm": 10,
       "elevationGainM": null,

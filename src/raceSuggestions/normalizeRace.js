@@ -17,6 +17,14 @@ function toNumber(value) {
 
 function toDateOnly(value) {
   if (!value) return null
+  // Extract the date part directly from ISO-style strings ("YYYY-MM-DD...")
+  // instead of going through `new Date(...).toISOString()`. A string with
+  // no explicit UTC offset (e.g. "2026-09-05T00:00:00") is parsed as local
+  // time, so converting it back to UTC shifts the date a day backward for
+  // any timezone ahead of UTC (e.g. Norway) - a plain string slice avoids
+  // that timezone round-trip entirely.
+  const match = String(value).match(/^(\d{4}-\d{2}-\d{2})/)
+  if (match) return match[1]
   const date = new Date(value)
   if (Number.isNaN(date.getTime())) return null
   return date.toISOString().slice(0, 10)

@@ -92,9 +92,13 @@ function mapEqTimingEvent(raw) {
   const distanceKm = distancesKm.length ? Math.max(...distancesKm) : undefined
 
   const startValue = raw.Starttime || raw.Date
-  const startDate = startValue ? new Date(startValue) : null
-  const hasRealTime = startDate && !Number.isNaN(startDate.getTime()) &&
-    (startDate.getUTCHours() !== 0 || startDate.getUTCMinutes() !== 0)
+  // Read the clock time directly from the string rather than via a Date
+  // object: parsing a timezone-less string with `new Date(...)` interprets
+  // it as local time, so extracting hours/minutes back out (even as UTC)
+  // can be wrong depending on the machine's timezone. A plain regex match
+  // avoids any timezone conversion.
+  const timeMatch = typeof startValue === 'string' ? startValue.match(/T(\d{2}):(\d{2})/) : null
+  const hasRealTime = Boolean(timeMatch) && (timeMatch[1] !== '00' || timeMatch[2] !== '00')
 
   const raceType = [
     meaningfulCategory(raw.Sport?.Name),
