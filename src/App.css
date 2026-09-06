@@ -76,6 +76,7 @@ h1, h2, h3, p { margin-top: 0; } h1 { margin-bottom: 17px; font: 600 clamp(42px,
 .upcoming-footer em { font-style: normal; }
 .suggestions-section { margin-top: 40px; padding: 0 0 10px; }
 .suggestions-filters { margin-top: 14px; }
+.suggestions-updated { margin: 4px 0 0; color: #8b958f; font-size: 11px; }
 .suggestions-state { margin-top: 16px; color: #71807a; font-size: 13px; }
 .suggestions-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
 .suggestion-card { display: flex; gap: 12px; padding: 18px; border: 1px solid #e0e3dc; border-radius: 8px; background: #fff; }

@@ -20,9 +20,14 @@ export async function fetchAllRaceSuggestions() {
   const results = await Promise.allSettled(sources.map((source) => source.fetch()))
   const races = []
   const errors = []
+  const meta = []
   results.forEach((result, index) => {
-    if (result.status === 'fulfilled') races.push(...result.value)
-    else errors.push({ source: sources[index].name, error: result.reason })
+    if (result.status === 'fulfilled') {
+      races.push(...result.value.races)
+      if (result.value.updatedAt) meta.push({ source: sources[index].name, updatedAt: result.value.updatedAt })
+    } else {
+      errors.push({ source: sources[index].name, error: result.reason })
+    }
   })
-  return { races, errors, allFailed: errors.length > 0 && errors.length === sources.length }
+  return { races, errors, meta, allFailed: errors.length > 0 && errors.length === sources.length }
 }

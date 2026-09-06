@@ -1,62 +1,29 @@
-// EQ Timing race source adapter.
+// EQ Timing race source adapter (browser side).
 //
-// Investigation notes (see also README.md):
-// EQ Timing (eqtiming.com) does not publish a documented, public, CORS-enabled
-// JSON/REST API for browsing races. The site is a per-event registration/
-// e-commerce platform (robots.txt disallows /account, /basket, /checkout,
-// /wishlist – typical for a registration/webshop system, not an open data
-// API), its sitemap.xml is empty, and no discoverable "list all events"
-// endpoint exists. Calling it directly from a static GitHub Pages site would
-// therefore either 404 or be blocked by CORS, and there is nothing we can
-// safely build a real integration against without an official API key/
-// endpoint from EQ Timing.
+// EQ Timing (eqtiming.com) does have a real, public, key-free API endpoint
+// (GET https://api.eqtiming.com/api/v2/Events), but it does not support
+// browser CORS - a direct fetch() from GitHub Pages is rejected by the
+// browser even though the request itself succeeds on the wire.
 //
-// To keep the architecture ready for when a real feed becomes available
-// (either an official EQ Timing API or a manually maintained JSON export),
-// this adapter supports an optional, user-configurable feed URL:
+// To work around this without introducing a database or an external proxy,
+// a scheduled GitHub Actions workflow
+// (.github/workflows/update-eqtiming-events.yml) calls the API server-side
+// once a day, normalizes/filters the result using the same shared logic as
+// the rest of this feature, and commits the output to
+// public/eqtiming-events.json. That file is same-origin on GitHub Pages, so
+// the browser can simply fetch it with no CORS issue.
 //
-//   VITE_EQTIMING_FEED_URL=https://example.com/eqtiming-events.json
-//
-// If the variable is not set, this source simply contributes zero
-// suggestions (the rest of the app keeps working). If it is set, we fetch it
-// defensively (timeout + try/catch) and map a handful of common field-name
-// variants onto our internal race model, without inventing any data.
-const SOURCE_NAME = 'EQ Timing'
-const FEED_URL = import.meta.env.VITE_EQTIMING_FEED_URL
-
-function firstDefined(object, keys) {
-  for (const key of keys) {
-    if (object[key] !== undefined && object[key] !== null && object[key] !== '') return object[key]
-  }
-  return undefined
-}
-
-function mapRawEvent(raw) {
-  return {
-    name: firstDefined(raw, ['name', 'title', 'eventName']),
-    date: firstDefined(raw, ['date', 'startDate', 'eventDate', 'start_date']),
-    startTime: firstDefined(raw, ['startTime', 'time', 'start_time']),
-    location: firstDefined(raw, ['location', 'city', 'place', 'venue']),
-    distanceKm: firstDefined(raw, ['distanceKm', 'distance_km', 'distance']),
-    elevationGainM: firstDefined(raw, ['elevationGainM', 'elevationGain', 'elevation', 'climb']),
-    raceType: firstDefined(raw, ['raceType', 'category', 'discipline', 'type']),
-    sourceUrl: firstDefined(raw, ['sourceUrl', 'url', 'link', 'eventUrl']),
-    registrationUrl: firstDefined(raw, ['registrationUrl', 'signupUrl', 'registerUrl']),
-    source: SOURCE_NAME,
-  }
-}
+// If the snapshot file is missing or fails to load, this source simply
+// contributes zero suggestions (surfaced as an error by the aggregator) -
+// the rest of the app keeps working regardless.
+const FEED_PATH = `${import.meta.env.BASE_URL}eqtiming-events.json`
 
 export async function fetchEqTimingRaces() {
-  if (!FEED_URL) return []
-  const controller = new AbortController()
-  const timeout = setTimeout(() => controller.abort(), 8000)
-  try {
-    const response = await fetch(FEED_URL, { signal: controller.signal })
-    if (!response.ok) throw new Error(`EQ Timing feed svarte ${response.status}`)
-    const payload = await response.json()
-    const rawEvents = Array.isArray(payload) ? payload : payload.events || []
-    return rawEvents.map(mapRawEvent)
-  } finally {
-    clearTimeout(timeout)
+  const response = await fetch(FEED_PATH, { cache: 'no-store' })
+  if (!response.ok) throw new Error(`Kunne ikke hente EQ Timing-snapshot (${response.status})`)
+  const payload = await response.json()
+  return {
+    races: Array.isArray(payload.events) ? payload.events : [],
+    updatedAt: payload.updatedAt,
   }
 }

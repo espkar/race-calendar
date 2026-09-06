@@ -23,15 +23,19 @@ Uten miljøvariablene starter appen med eksempeldata, slik at grensesnittet kan 
 
 ## Forslag til andre løp
 
-Under kalenderen vises en seksjon, **«Forslag til andre løp»**, som henter aktuelle motbakke-/fjell-/trailløp fra eksterne kilder og filtrerer bort løp som allerede finnes i den manuelt vedlikeholdte kalenderen. Disse forslagene lagres aldri i Supabase – de hentes kun i minnet ved sidelasting. Bruker kan trykke **«Legg til»** for å åpne det vanlige arrangement-skjemaet, forhåndsutfylt med data fra forslaget.
+Under kalenderen vises en seksjon, **«Forslag til andre løp»**, som viser aktuelle motbakke-/fjell-/trail-/ultraløp hentet automatisk fra **EQ Timing**. Forslagene lagres aldri i Supabase eller noen database – de hentes kun i minnet ved sidelasting, og sammenlignes mot den manuelt vedlikeholdte kalenderen slik at løp som allerede finnes der ikke vises på nytt (dette skjer i nettleseren, ikke bare i den daglige jobben, slik at nylig lagt-til løp forsvinner fra forslagene umiddelbart). Bruker kan trykke **«Legg til»** for å åpne det vanlige arrangement-skjemaet, forhåndsutfylt med data fra forslaget – løpet blir først en del av kalenderen når brukeren selv lagrer skjemaet.
 
-Kilden er forberedt for **EQ Timing**, men EQ Timing publiserer ikke noe dokumentert, offentlig API for å liste opp løp (siden er bygget som en påmeldings-/nettbutikkplattform for enkeltarrangementer, uten et "hent alle løp"-endepunkt eller CORS-støtte for nettleserkall). Adapteren i `src/raceSources/eqTiming.js` er derfor forberedt til å hente fra en valgfri, konfigurerbar feed:
+**EQ Timing har faktisk et offentlig, dokumentert API** (`GET https://api.eqtiming.com/api/v2/Events`, Swagger på `https://api.eqtiming.com/docs`), og det krever ingen API-nøkkel. Begrensningen er at endepunktet **ikke støtter CORS** – et `fetch()`-kall direkte fra nettleseren/GitHub Pages blir derfor blokkert av nettleseren selv om selve forespørselen lykkes på serversiden.
 
-```text
-VITE_EQTIMING_FEED_URL=https://example.com/eqtiming-events.json
+Løsningen er en **planlagt GitHub Actions-jobb** som kjører serverside (uten CORS-begrensning), én gang i døgnet (`.github/workflows/update-eqtiming-events.yml`, kan også kjøres manuelt):
+
+```
+EQ Timing API → scripts/update-eqtiming-events.js → normaliser/filtrer/dedupliser → public/eqtiming-events.json → commit hvis endret
 ```
 
-Er variabelen ikke satt, bidrar kilden ganske enkelt med null forslag – resten av appen fungerer som normalt. Samme mønster kan brukes til å koble på flere kilder senere (for eksempel Kondis' terminliste) ved å legge til en ny fil i `src/raceSources/` og registrere den i `src/raceSources/index.js`.
+Scriptet henter norske arrangementer fra i dag til nyttår, filtrerer bort ugyldige/upubliserte/duplikate rader og løp som tydelig er sykkelritt (samme generiske kategorier brukes av EQ Timing for både sykkel- og terrengløp), beholder kun relevante motbakke-/fjell-/trail-/ultra-/trappeløp, og skriver resultatet til `public/eqtiming-events.json`. Denne filen er statisk og same-origin på GitHub Pages, så frontend (`src/raceSources/eqTiming.js`) kan hente den med et vanlig `fetch()` uten CORS-problemer. Jobben committer kun filen når innholdet faktisk har endret seg, og overskriver aldri en gyldig snapshot hvis EQ Timing er nede – i så fall feiler jobben tydelig og forrige snapshot blir stående.
+
+Samme arkitektur kan utvides med flere kilder (for eksempel Kondis' terminliste) ved å legge til en ny fil i `src/raceSources/` og registrere den i `src/raceSources/index.js`.
 
 ## GitHub Pages
 

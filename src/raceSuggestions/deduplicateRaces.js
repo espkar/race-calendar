@@ -40,3 +40,18 @@ export function deduplicateRaces(suggestedRaces, existingEvents) {
     })
   })
 }
+
+// Collapses exact repeats within a single source's own result list (name +
+// date + location), keeping the first occurrence. This is deliberately
+// stricter than deduplicateRaces() above: it must never merge legitimately
+// distinct events (e.g. the same karusell series on different dates), only
+// literal repeats of the same event.
+export function deduplicateWithinList(races) {
+  const seen = new Set()
+  return races.filter((race) => {
+    const key = `${normalizeName(race.name)}|${race.date}|${normalizeName(race.location)}`
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
