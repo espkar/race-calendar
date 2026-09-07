@@ -1,59 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-06T13:21:44.925Z",
+  "updatedAt": "2026-09-07T09:22:57.424Z",
   "events": [
-    {
-      "id": "eq-timing:ok26:-5.-løp-jaktstart:2026-09-06",
-      "name": "OK26: 5. løp Jaktstart",
-      "date": "2026-09-06",
-      "startTime": null,
-      "location": "Oppdalslinna 401",
-      "distanceKm": 4.75,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Klubbstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": "https://www.webscorer.com/register?raceid=414293"
-    },
-    {
-      "id": "eq-timing:emblemsfjellet-opp-2026:2026-09-06",
-      "name": "Emblemsfjellet opp 2026",
-      "date": "2026-09-06",
-      "startTime": null,
-      "location": "Emblem",
-      "distanceKm": 7.5,
-      "elevationGainM": null,
-      "raceType": "Idrettsskoler",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:i-heiane-båden:2026-09-06",
-      "name": "i Heiane Båden",
-      "date": "2026-09-06",
-      "startTime": null,
-      "location": "Kristiansand",
-      "distanceKm": 5,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": "www.tyndeg.no",
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:sprinklet-opp:2026-09-06",
-      "name": "Sprinklet Opp",
-      "date": "2026-09-06",
-      "startTime": null,
-      "location": "Fredrikstad",
-      "distanceKm": 1.5,
-      "elevationGainM": null,
-      "raceType": "Motbakkeløp · Klubbstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:markakarusellen-5-km-(andre)-høst-2026:2026-09-08",
       "name": "Markakarusellen 5 km (andre) høst 2026",
@@ -153,7 +101,7 @@
       "location": "Sandane",
       "distanceKm": 30,
       "elevationGainM": null,
-      "raceType": "Fjell-løp · Nasjonalt stevne",
+      "raceType": "Fjell-løp · Treningsstevne",
       "source": "EQ Timing",
       "sourceUrl": "https://www.nordfjordryggenfjellop.no/",
       "registrationUrl": null
@@ -866,7 +814,7 @@
       "date": "2026-10-10",
       "startTime": null,
       "location": "Alta",
-      "distanceKm": 5,
+      "distanceKm": 10,
       "elevationGainM": null,
       "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
