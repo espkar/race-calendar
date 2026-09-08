@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-07T09:22:57.424Z",
+  "updatedAt": "2026-09-08T08:53:07.124Z",
   "events": [
     {
       "id": "eq-timing:markakarusellen-5-km-(andre)-høst-2026:2026-09-08",
@@ -99,7 +99,7 @@
       "date": "2026-09-12",
       "startTime": "10:00",
       "location": "Sandane",
-      "distanceKm": 30,
+      "distanceKm": 21,
       "elevationGainM": null,
       "raceType": "Fjell-løp · Treningsstevne",
       "source": "EQ Timing",
