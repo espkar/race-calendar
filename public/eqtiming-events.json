@@ -1,59 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-08T08:53:07.124Z",
+  "updatedAt": "2026-09-09T08:58:52.600Z",
   "events": [
-    {
-      "id": "eq-timing:markakarusellen-5-km-(andre)-høst-2026:2026-09-08",
-      "name": "Markakarusellen 5 km (andre) høst 2026",
-      "date": "2026-09-08",
-      "startTime": null,
-      "location": "Spiraltoppen",
-      "distanceKm": 5,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Seriestevne/Karusell",
-      "source": "EQ Timing",
-      "sourceUrl": "ski.sturla.no",
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:oseberg-skilag-terrengløp-3-2026:2026-09-08",
-      "name": "Oseberg Skilag Terrengløp 3 2026",
-      "date": "2026-09-08",
-      "startTime": "15:00",
-      "location": "Sandeåsen",
-      "distanceKm": 1.5,
-      "elevationGainM": null,
-      "raceType": "Langrenn · Intervallstart Klassisk",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:varden-opp-2026:2026-09-08",
-      "name": "Varden Opp 2026",
-      "date": "2026-09-08",
-      "startTime": "16:00",
-      "location": "Varden",
-      "distanceKm": 3.8,
-      "elevationGainM": null,
-      "raceType": "Motbakkeløp · Nasjonalt stevne",
-      "source": "EQ Timing",
-      "sourceUrl": "http://www.molde7topper.no/varden-opp",
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:terrengløp-nr.9-2026:2026-09-08",
-      "name": "Terrengløp nr.9 2026",
-      "date": "2026-09-08",
-      "startTime": "18:00",
-      "location": "Fossen Skole, Moelv",
-      "distanceKm": 0.35,
-      "elevationGainM": null,
-      "raceType": "Mosjonsidrettsgruper",
-      "source": "EQ Timing",
-      "sourceUrl": "http://moelven-il-ski.idrettenonline.no/p/3718/nyheter",
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:ringvål-10-sep,-terrengkarusellen-2026:2026-09-10",
       "name": "Ringvål 10 sep, Terrengkarusellen 2026",
@@ -286,6 +234,19 @@
       "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
       "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:terrengløp-nr.10-2026:2026-09-15",
+      "name": "Terrengløp nr.10 2026",
+      "date": "2026-09-15",
+      "startTime": "18:00",
+      "location": "Fossen Skole, Moelv",
+      "distanceKm": 0.35,
+      "elevationGainM": null,
+      "raceType": "Mosjonsidrettsgruper",
+      "source": "EQ Timing",
+      "sourceUrl": "http://moelven-il-ski.idrettenonline.no/p/3718/nyheter",
       "registrationUrl": null
     },
     {
@@ -892,7 +853,7 @@
       "date": "2026-10-10",
       "startTime": null,
       "location": "Trøgstad",
-      "distanceKm": null,
+      "distanceKm": 5,
       "elevationGainM": null,
       "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
@@ -1053,6 +1014,32 @@
       "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
       "sourceUrl": "www.tyndeg.no",
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:km-terrengløp:2026-10-18",
+      "name": "KM terrengløp",
+      "date": "2026-10-18",
+      "startTime": "12:00",
+      "location": "Molde",
+      "distanceKm": null,
+      "elevationGainM": null,
+      "raceType": "Terrengløp · Kretsstevne",
+      "source": "EQ Timing",
+      "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:terrengløp-ihle-il---18.10.26:2026-10-18",
+      "name": "Terrengløp Ihle il - 18.10.26",
+      "date": "2026-10-18",
+      "startTime": null,
+      "location": "Grønlandsletta",
+      "distanceKm": 5,
+      "elevationGainM": null,
+      "raceType": "Idrettsskoler",
+      "source": "EQ Timing",
+      "sourceUrl": null,
       "registrationUrl": null
     },
     {
