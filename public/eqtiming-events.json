@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-09T08:58:52.600Z",
+  "updatedAt": "2026-09-10T08:57:50.486Z",
   "events": [
     {
       "id": "eq-timing:ringvål-10-sep,-terrengkarusellen-2026:2026-09-10",
@@ -346,7 +346,7 @@
       "date": "2026-09-19",
       "startTime": "08:00",
       "location": "Drammen - Spiralen",
-      "distanceKm": 57,
+      "distanceKm": 10,
       "elevationGainM": null,
       "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
@@ -754,6 +754,19 @@
       "raceType": "Annet",
       "source": "EQ Timing",
       "sourceUrl": "sentrumslopethaugesund.no",
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:sognefjord-backyard:2026-10-03",
+      "name": "Sognefjord Backyard",
+      "date": "2026-10-03",
+      "startTime": null,
+      "location": "Sogndal",
+      "distanceKm": 6.71,
+      "elevationGainM": null,
+      "raceType": "Backyard",
+      "source": "EQ Timing",
+      "sourceUrl": null,
       "registrationUrl": null
     },
     {
