@@ -1,20 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-10T08:57:50.486Z",
+  "updatedAt": "2026-09-11T08:55:57.320Z",
   "events": [
-    {
-      "id": "eq-timing:ringvål-10-sep,-terrengkarusellen-2026:2026-09-10",
-      "name": "Ringvål 10 sep, Terrengkarusellen 2026",
-      "date": "2026-09-10",
-      "startTime": null,
-      "location": "Trondheim",
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Løp",
-      "source": "EQ Timing",
-      "sourceUrl": "https://terrengkarusellentrondheim.no/",
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:spåkefjellet-opp-2026:2026-09-12",
       "name": "Spåkefjellet Opp 2026",
@@ -250,6 +237,32 @@
       "registrationUrl": null
     },
     {
+      "id": "eq-timing:3--vannsløpet-h2026:2026-09-15",
+      "name": "3- Vannsløpet H2026",
+      "date": "2026-09-15",
+      "startTime": "18:00",
+      "location": "Trondheim",
+      "distanceKm": null,
+      "elevationGainM": null,
+      "raceType": "Terrengløp · Kretsstevne",
+      "source": "EQ Timing",
+      "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:terrengløp-fana-il-2026:2026-09-15",
+      "name": "Terrengløp Fana IL 2026",
+      "date": "2026-09-15",
+      "startTime": null,
+      "location": "Totland, Fanahytten",
+      "distanceKm": 1,
+      "elevationGainM": null,
+      "raceType": "Langrenn · Fellesstart Fristil",
+      "source": "EQ Timing",
+      "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
       "id": "eq-timing:ulsrudvann-rundt-6.-løp-2026:2026-09-17",
       "name": "Ulsrudvann Rundt 6. løp 2026",
       "date": "2026-09-17",
@@ -260,6 +273,19 @@
       "raceType": "Terrengløp · Klubbstevne",
       "source": "EQ Timing",
       "sourceUrl": "https://www.noklevannrundt.no/",
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:nilsbyen-17-sep,-terrengkarusellen-2026:2026-09-17",
+      "name": "Nilsbyen 17 sep, Terrengkarusellen 2026",
+      "date": "2026-09-17",
+      "startTime": null,
+      "location": "Trondheim",
+      "distanceKm": null,
+      "elevationGainM": null,
+      "raceType": "Løp",
+      "source": "EQ Timing",
+      "sourceUrl": "https://terrengkarusellentrondheim.no/",
       "registrationUrl": null
     },
     {
@@ -510,19 +536,6 @@
       "registrationUrl": null
     },
     {
-      "id": "eq-timing:stoltzekleiven-opp-2026:2026-09-25",
-      "name": "Stoltzekleiven Opp 2026",
-      "date": "2026-09-25",
-      "startTime": null,
-      "location": "Bergen",
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Trappeløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
       "id": "eq-timing:nattland-backyard-ultra-2026:2026-09-26",
       "name": "Nattland Backyard Ultra 2026",
       "date": "2026-09-26",
@@ -632,7 +645,7 @@
       "date": "2026-09-27",
       "startTime": "13:59",
       "location": "Slåstad",
-      "distanceKm": 4,
+      "distanceKm": 12,
       "elevationGainM": null,
       "raceType": "Terrengløp · Kretsstevne",
       "source": "EQ Timing",
