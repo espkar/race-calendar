@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-11T08:55:57.320Z",
+  "updatedAt": "2026-09-12T08:39:01.845Z",
   "events": [
     {
       "id": "eq-timing:spåkefjellet-opp-2026:2026-09-12",
@@ -71,7 +71,7 @@
       "id": "eq-timing:nye-sjangser-backyard:2026-09-12",
       "name": "Nye Sjangser Backyard",
       "date": "2026-09-12",
-      "startTime": "09:00",
+      "startTime": "08:00",
       "location": "Porsgrunn",
       "distanceKm": 6.7,
       "elevationGainM": null,
