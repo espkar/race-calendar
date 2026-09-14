@@ -1,33 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-13T09:34:13.418Z",
+  "updatedAt": "2026-09-14T09:53:45.760Z",
   "events": [
-    {
-      "id": "eq-timing:seterløpet-2026:2026-09-13",
-      "name": "Seterløpet 2026",
-      "date": "2026-09-13",
-      "startTime": null,
-      "location": "Formolaupet 29",
-      "distanceKm": 19,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Nasjonalt stevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:skogsløpet-mosviksenderen-rundt_kopi:2026-09-13",
-      "name": "SKOGSLØPET MOSVIKSENDEREN RUNDT_kopi",
-      "date": "2026-09-13",
-      "startTime": null,
-      "location": "Mosvik",
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:namdalskarusellen-2026-løp-8---spillumsmarka-rundt:2026-09-15",
       "name": "Namdalskarusellen 2026 løp 8 - Spillumsmarka rundt",
@@ -273,6 +247,19 @@
       "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
       "sourceUrl": "https://isonen.no/event/cmqa2ka9h01n65w01wtgxrdiz/",
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:dragsjøen-rundt-2026:2026-09-19",
+      "name": "Dragsjøen-rundt 2026",
+      "date": "2026-09-19",
+      "startTime": null,
+      "location": "Dragsjøhytta",
+      "distanceKm": 0.8,
+      "elevationGainM": null,
+      "raceType": "Terrengløp · Treningsstevne",
+      "source": "EQ Timing",
+      "sourceUrl": null,
       "registrationUrl": null
     },
     {
@@ -944,7 +931,7 @@
       "date": "2026-10-18",
       "startTime": null,
       "location": "Grønlandsletta",
-      "distanceKm": 5,
+      "distanceKm": 1,
       "elevationGainM": null,
       "raceType": "Idrettsskoler",
       "source": "EQ Timing",
