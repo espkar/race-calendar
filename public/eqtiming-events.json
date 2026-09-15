@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-14T09:53:45.760Z",
+  "updatedAt": "2026-09-15T09:29:34.004Z",
   "events": [
     {
       "id": "eq-timing:namdalskarusellen-2026-løp-8---spillumsmarka-rundt:2026-09-15",
@@ -354,6 +354,19 @@
       "registrationUrl": null
     },
     {
+      "id": "eq-timing:storhaugen-youth-trail-2026:2026-09-20",
+      "name": "Storhaugen Youth Trail 2026",
+      "date": "2026-09-20",
+      "startTime": null,
+      "location": "Todalen",
+      "distanceKm": 2,
+      "elevationGainM": null,
+      "raceType": "Annet",
+      "source": "EQ Timing",
+      "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
       "id": "eq-timing:voss-løpskarusell-2026,-løp-6:2026-09-21",
       "name": "Voss Løpskarusell  2026, løp 6",
       "date": "2026-09-21",
@@ -553,7 +566,7 @@
       "name": "Tromsø Backyard Ultra 2026",
       "date": "2026-10-03",
       "startTime": null,
-      "location": "Tromsø",
+      "location": "TUIL Arena, Tromsdalen",
       "distanceKm": 6.7,
       "elevationGainM": null,
       "raceType": "Ultraløp · Treningsstevne",
