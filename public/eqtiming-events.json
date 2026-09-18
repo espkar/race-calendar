@@ -1,33 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-17T09:27:48.871Z",
+  "updatedAt": "2026-09-18T09:01:13.409Z",
   "events": [
-    {
-      "id": "eq-timing:ulsrudvann-rundt-6.-løp-2026:2026-09-17",
-      "name": "Ulsrudvann Rundt 6. løp 2026",
-      "date": "2026-09-17",
-      "startTime": null,
-      "location": "Ulsrudvann, Oslo",
-      "distanceKm": 2.87,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Klubbstevne",
-      "source": "EQ Timing",
-      "sourceUrl": "https://www.noklevannrundt.no/",
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:nilsbyen-17-sep,-terrengkarusellen-2026:2026-09-17",
-      "name": "Nilsbyen 17 sep, Terrengkarusellen 2026",
-      "date": "2026-09-17",
-      "startTime": null,
-      "location": "Trondheim",
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Løp",
-      "source": "EQ Timing",
-      "sourceUrl": "https://terrengkarusellentrondheim.no/",
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:ulvøyløpet-2026:2026-09-19",
       "name": "Ulvøyløpet 2026",
@@ -302,6 +276,19 @@
       "registrationUrl": null
     },
     {
+      "id": "eq-timing:lianvannet-24-sep,-terrengkarusellen-2026:2026-09-24",
+      "name": "Lianvannet  24 sep, Terrengkarusellen 2026",
+      "date": "2026-09-24",
+      "startTime": null,
+      "location": "Trondheim",
+      "distanceKm": null,
+      "elevationGainM": null,
+      "raceType": "Løp",
+      "source": "EQ Timing",
+      "sourceUrl": "https://terrengkarusellentrondheim.no/",
+      "registrationUrl": null
+    },
+    {
       "id": "eq-timing:nattland-backyard-ultra-2026:2026-09-26",
       "name": "Nattland Backyard Ultra 2026",
       "date": "2026-09-26",
@@ -390,6 +377,19 @@
       "raceType": "Motbakkeløp · Treningsstevne",
       "source": "EQ Timing",
       "sourceUrl": "http://www.vardentilvarden.no/",
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:bergheim-opp:2026-09-26",
+      "name": "Bergheim opp",
+      "date": "2026-09-26",
+      "startTime": "11:30",
+      "location": "Bromma, Nesbyen",
+      "distanceKm": 4.5,
+      "elevationGainM": null,
+      "raceType": "Motbakkeløp · Nasjonalt stevne",
+      "source": "EQ Timing",
+      "sourceUrl": null,
       "registrationUrl": null
     },
     {
