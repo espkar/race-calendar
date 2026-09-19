@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-18T09:01:13.409Z",
+  "updatedAt": "2026-09-19T08:48:58.192Z",
   "events": [
     {
       "id": "eq-timing:ulvøyløpet-2026:2026-09-19",
@@ -744,6 +744,19 @@
       "registrationUrl": null
     },
     {
+      "id": "eq-timing:blåmansløpene---etappe-1:2026-10-17",
+      "name": "Blåmansløpene - etappe 1",
+      "date": "2026-10-17",
+      "startTime": "10:00",
+      "location": "Fjellveien til Blåmanen, Bergen",
+      "distanceKm": null,
+      "elevationGainM": null,
+      "raceType": "Terrengløp · Treningsstevne",
+      "source": "EQ Timing",
+      "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
       "id": "eq-timing:gjesdal-trailrun-2026:2026-10-18",
       "name": "Gjesdal Trailrun 2026",
       "date": "2026-10-18",
@@ -926,6 +939,19 @@
       "registrationUrl": null
     },
     {
+      "id": "eq-timing:blåmansløpene---etappe-2:2026-10-31",
+      "name": "Blåmansløpene - etappe 2",
+      "date": "2026-10-31",
+      "startTime": "10:00",
+      "location": "Fjellveien til Blåmanen, Bergen",
+      "distanceKm": null,
+      "elevationGainM": null,
+      "raceType": "Terrengløp · Treningsstevne",
+      "source": "EQ Timing",
+      "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
       "id": "eq-timing:martincrossen-trail-run:2026-11-04",
       "name": "Martincrossen Trail Run",
       "date": "2026-11-04",
@@ -988,6 +1014,19 @@
       "raceType": "Annet",
       "source": "EQ Timing",
       "sourceUrl": "www.bykarusellen.no",
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:blåmansløpene---etappe-3:2026-11-14",
+      "name": "Blåmansløpene - etappe 3",
+      "date": "2026-11-14",
+      "startTime": "10:00",
+      "location": "Fjellveien til Blåmanen, Bergen",
+      "distanceKm": null,
+      "elevationGainM": null,
+      "raceType": "Terrengløp · Treningsstevne",
+      "source": "EQ Timing",
+      "sourceUrl": null,
       "registrationUrl": null
     },
     {
