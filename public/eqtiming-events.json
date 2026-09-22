@@ -1,20 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-21T09:57:58.058Z",
+  "updatedAt": "2026-09-22T09:19:17.172Z",
   "events": [
-    {
-      "id": "eq-timing:voss-løpskarusell-2026,-løp-6:2026-09-21",
-      "name": "Voss Løpskarusell  2026, løp 6",
-      "date": "2026-09-21",
-      "startTime": null,
-      "location": "Voss Idrettsplass",
-      "distanceKm": 5,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": "vossil.no",
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:gt-karusellen-2026-løp-9-lauvhøgda-opp:2026-09-22",
       "name": "GT karusellen 2026 løp 9 Lauvhøgda opp",
@@ -244,7 +231,7 @@
       "location": "TUIL Arena, Tromsdalen",
       "distanceKm": 6.707,
       "elevationGainM": null,
-      "raceType": "Ultraløp · Treningsstevne",
+      "raceType": "Ultraløp · Nasjonalt stevne",
       "source": "EQ Timing",
       "sourceUrl": "https://msm.no/tromso-backyard-ultra/",
       "registrationUrl": null
