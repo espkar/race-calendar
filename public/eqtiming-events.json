@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-23T09:19:43.453Z",
+  "updatedAt": "2026-09-24T09:19:38.981Z",
   "events": [
     {
       "id": "eq-timing:lianvannet-24-sep,-terrengkarusellen-2026:2026-09-24",
@@ -154,6 +154,19 @@
       "distanceKm": 3.5,
       "elevationGainM": null,
       "raceType": "Motbakkeløp · Treningsstevne",
+      "source": "EQ Timing",
+      "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:terrengløp-brokke:2026-09-29",
+      "name": "Terrengløp Brokke",
+      "date": "2026-09-29",
+      "startTime": null,
+      "location": "Brokke Alpinsenter",
+      "distanceKm": 5,
+      "elevationGainM": null,
+      "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
       "sourceUrl": null,
       "registrationUrl": null
@@ -697,7 +710,7 @@
       "date": "2026-11-07",
       "startTime": null,
       "location": "Søgne",
-      "distanceKm": 20,
+      "distanceKm": 3.1,
       "elevationGainM": null,
       "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
