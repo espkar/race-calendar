@@ -1,20 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-24T09:19:38.981Z",
+  "updatedAt": "2026-09-25T09:37:37.501Z",
   "events": [
-    {
-      "id": "eq-timing:lianvannet-24-sep,-terrengkarusellen-2026:2026-09-24",
-      "name": "Lianvannet  24 sep, Terrengkarusellen 2026",
-      "date": "2026-09-24",
-      "startTime": null,
-      "location": "Trondheim",
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Løp",
-      "source": "EQ Timing",
-      "sourceUrl": "https://terrengkarusellentrondheim.no/",
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:nattland-backyard-ultra-2026:2026-09-26",
       "name": "Nattland Backyard Ultra 2026",
