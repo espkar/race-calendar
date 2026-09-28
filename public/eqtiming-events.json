@@ -1,33 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-27T10:01:30.618Z",
+  "updatedAt": "2026-09-28T10:56:37.488Z",
   "events": [
-    {
-      "id": "eq-timing:storehornet-497---2026:2026-09-27",
-      "name": "Storehornet 497 - 2026",
-      "date": "2026-09-27",
-      "startTime": "12:00",
-      "location": "Godøy",
-      "distanceKm": 4.2,
-      "elevationGainM": null,
-      "raceType": "Motbakkeløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": "https://www.facebook.com/groups/743971485942640/",
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:dølisjøen-rundt-2026-løp:2026-09-27",
-      "name": "Dølisjøen Rundt 2026 Løp",
-      "date": "2026-09-27",
-      "startTime": "13:59",
-      "location": "Slåstad",
-      "distanceKm": 12,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Kretsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:skistua-opp-#3-2026:2026-09-28",
       "name": "Skistua opp #3-2026",
@@ -36,7 +10,7 @@
       "location": "Tynset",
       "distanceKm": 3.5,
       "elevationGainM": null,
-      "raceType": "Motbakkeløp · Treningsstevne",
+      "raceType": "Annet",
       "source": "EQ Timing",
       "sourceUrl": null,
       "registrationUrl": null
@@ -298,7 +272,7 @@
       "elevationGainM": null,
       "raceType": "Terrengløp · Norgesmesterskap",
       "source": "EQ Timing",
-      "sourceUrl": null,
+      "sourceUrl": "https://ski.stokkeil.no/nm-terrenglop-lang-loype-2026/",
       "registrationUrl": null
     },
     {
