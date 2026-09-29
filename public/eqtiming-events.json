@@ -1,20 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-09-28T10:56:37.488Z",
+  "updatedAt": "2026-09-29T10:42:36.898Z",
   "events": [
-    {
-      "id": "eq-timing:skistua-opp-#3-2026:2026-09-28",
-      "name": "Skistua opp #3-2026",
-      "date": "2026-09-28",
-      "startTime": null,
-      "location": "Tynset",
-      "distanceKm": 3.5,
-      "elevationGainM": null,
-      "raceType": "Annet",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:terrengløp-brokke:2026-09-29",
       "name": "Terrengløp Brokke",
@@ -26,6 +13,19 @@
       "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
       "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:#test_gfx:2026-09-29",
+      "name": "#Test_gfx",
+      "date": "2026-09-29",
+      "startTime": "09:00",
+      "location": "Nordbytjernet, Jessheim",
+      "distanceKm": 4.39,
+      "elevationGainM": null,
+      "raceType": "Terrengløp · Norgesmesterskap",
+      "source": "EQ Timing",
+      "sourceUrl": "https://www.ukiportalen.no/nm-terreng-lang-l%C3%B8ype",
       "registrationUrl": null
     },
     {
