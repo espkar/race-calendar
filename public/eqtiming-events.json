@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-01T10:58:20.091Z",
+  "updatedAt": "2026-10-02T10:31:35.353Z",
   "events": [
     {
       "id": "eq-timing:nesbyen-backyard:2026-10-03",
@@ -125,7 +125,7 @@
       "date": "2026-10-10",
       "startTime": null,
       "location": "Alta",
-      "distanceKm": 10,
+      "distanceKm": 3,
       "elevationGainM": null,
       "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
@@ -385,7 +385,7 @@
       "date": "2026-10-18",
       "startTime": "12:00",
       "location": "Molde",
-      "distanceKm": null,
+      "distanceKm": 0.8,
       "elevationGainM": null,
       "raceType": "Terrengløp · Kretsstevne",
       "source": "EQ Timing",
