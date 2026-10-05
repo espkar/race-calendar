@@ -1,20 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-04T10:35:38.533Z",
+  "updatedAt": "2026-10-05T11:31:23.580Z",
   "events": [
-    {
-      "id": "eq-timing:i-heiane-oddersjaa:2026-10-04",
-      "name": "i Heiane Oddersjaa",
-      "date": "2026-10-04",
-      "startTime": null,
-      "location": "Kristiansand",
-      "distanceKm": 5,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": "www.tyndeg.no",
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:bul-løpet-2026:2026-10-10",
       "name": "BUL-Løpet 2026",
