@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-05T11:31:23.580Z",
+  "updatedAt": "2026-10-06T11:17:48.736Z",
   "events": [
     {
       "id": "eq-timing:bul-løpet-2026:2026-10-10",
@@ -21,7 +21,7 @@
       "date": "2026-10-10",
       "startTime": null,
       "location": "Furumo Idrettspark",
-      "distanceKm": 10,
+      "distanceKm": 1.5,
       "elevationGainM": null,
       "raceType": "Terrengløp · Nasjonalt stevne",
       "source": "EQ Timing",
@@ -99,9 +99,9 @@
       "date": "2026-10-10",
       "startTime": "10:00",
       "location": "Bodø",
-      "distanceKm": 7,
+      "distanceKm": null,
       "elevationGainM": null,
-      "raceType": "Backyard",
+      "raceType": "Backyard · Treningsstevne",
       "source": "EQ Timing",
       "sourceUrl": "https://www.instagram.com/phsxbosi_backyardultra/",
       "registrationUrl": null
