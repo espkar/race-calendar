@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-08T11:23:25.539Z",
+  "updatedAt": "2026-10-09T11:20:34.055Z",
   "events": [
     {
       "id": "eq-timing:bul-løpet-2026:2026-10-10",
@@ -26,19 +26,6 @@
       "raceType": "Terrengløp · Nasjonalt stevne",
       "source": "EQ Timing",
       "sourceUrl": "www.furumomila.no",
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:nesaksla-opp-2026:2026-10-10",
-      "name": "Nesaksla opp 2026",
-      "date": "2026-10-10",
-      "startTime": "12:00",
-      "location": "Åndalsnes",
-      "distanceKm": 2,
-      "elevationGainM": null,
-      "raceType": "Motbakkeløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
       "registrationUrl": null
     },
     {
