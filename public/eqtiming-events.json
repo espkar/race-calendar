@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-09T11:20:34.055Z",
+  "updatedAt": "2026-10-10T10:37:39.340Z",
   "events": [
     {
       "id": "eq-timing:bul-løpet-2026:2026-10-10",
@@ -8,9 +8,9 @@
       "date": "2026-10-10",
       "startTime": null,
       "location": "Alta",
-      "distanceKm": 3,
+      "distanceKm": 1,
       "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
+      "raceType": "Terrengløp · Klubbstevne",
       "source": "EQ Timing",
       "sourceUrl": null,
       "registrationUrl": null
@@ -73,7 +73,7 @@
       "date": "2026-10-10",
       "startTime": null,
       "location": "Trøgstad",
-      "distanceKm": 5,
+      "distanceKm": 0.45,
       "elevationGainM": null,
       "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
@@ -99,7 +99,7 @@
       "date": "2026-10-10",
       "startTime": null,
       "location": "Bokemoa",
-      "distanceKm": 3,
+      "distanceKm": null,
       "elevationGainM": null,
       "raceType": "Terrengløp · Norgesmesterskap",
       "source": "EQ Timing",
@@ -481,6 +481,19 @@
       "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
       "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:hvamrunners-indoor-200m-1-hour:2026-11-14",
+      "name": "Hvamrunners Indoor 200m 1 hour",
+      "date": "2026-11-14",
+      "startTime": "08:00",
+      "location": "Neskollen",
+      "distanceKm": null,
+      "elevationGainM": null,
+      "raceType": "Ultraløp · Treningsstevne",
+      "source": "EQ Timing",
+      "sourceUrl": "https://friivii.org/neskollen-oppned/article/oppned-og-10k-14-september-2025",
       "registrationUrl": null
     },
     {
