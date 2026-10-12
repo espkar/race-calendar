@@ -1,20 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-11T10:50:29.324Z",
+  "updatedAt": "2026-10-12T12:01:38.915Z",
   "events": [
-    {
-      "id": "eq-timing:elgløpet-2026:2026-10-11",
-      "name": "Elgløpet 2026",
-      "date": "2026-10-11",
-      "startTime": null,
-      "location": "Høland Stadion",
-      "distanceKm": 10,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": "https://www.hiul.no/",
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:volda-bakgårdsultra-2026:2026-10-17",
       "name": "Volda Bakgårdsultra 2026",
