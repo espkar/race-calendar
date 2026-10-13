@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-12T12:01:38.915Z",
+  "updatedAt": "2026-10-13T11:50:10.967Z",
   "events": [
     {
       "id": "eq-timing:volda-bakgårdsultra-2026:2026-10-17",
@@ -338,19 +338,6 @@
       "raceType": "Annet",
       "source": "EQ Timing",
       "sourceUrl": "www.bykarusellen.no",
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:sognefjord-backyard:2026-11-14",
-      "name": "Sognefjord Backyard",
-      "date": "2026-11-14",
-      "startTime": null,
-      "location": "Sogndal",
-      "distanceKm": 6.71,
-      "elevationGainM": null,
-      "raceType": "Backyard",
-      "source": "EQ Timing",
-      "sourceUrl": "sognefjordlopeklubb.no",
       "registrationUrl": null
     },
     {
