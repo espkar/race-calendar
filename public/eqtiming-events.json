@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-15T09:09:41.764Z",
+  "updatedAt": "2026-10-16T09:02:45.498Z",
   "events": [
     {
       "id": "eq-timing:volda-bakgårdsultra-2026:2026-10-17",
@@ -372,7 +372,7 @@
       "date": "2026-11-21",
       "startTime": null,
       "location": "Kristiansand",
-      "distanceKm": 5,
+      "distanceKm": 1,
       "elevationGainM": null,
       "raceType": "Terrengløp · Treningsstevne",
       "source": "EQ Timing",
