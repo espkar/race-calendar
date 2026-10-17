@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-16T09:02:45.498Z",
+  "updatedAt": "2026-10-17T08:35:09.683Z",
   "events": [
     {
       "id": "eq-timing:volda-bakgårdsultra-2026:2026-10-17",
@@ -45,7 +45,7 @@
       "id": "eq-timing:hundvågløpet-2026:2026-10-17",
       "name": "Hundvågløpet 2026",
       "date": "2026-10-17",
-      "startTime": null,
+      "startTime": "09:00",
       "location": "Hundvåg stadion",
       "distanceKm": 5,
       "elevationGainM": null,
