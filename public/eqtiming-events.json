@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-19T09:56:08.969Z",
+  "updatedAt": "2026-10-20T09:27:09.307Z",
   "events": [
     {
       "id": "eq-timing:arctic-alta-backyard-2026:2026-10-24",
@@ -156,6 +156,19 @@
       "raceType": "Ultraløp · Treningsstevne",
       "source": "EQ Timing",
       "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:jubileumsløp/terrengløp-7.november:2026-11-07",
+      "name": "Jubileumsløp/terrengløp 7.november",
+      "date": "2026-11-07",
+      "startTime": "11:00",
+      "location": "Tveitedalen",
+      "distanceKm": 3,
+      "elevationGainM": null,
+      "raceType": "Mosjonsidrettsgruper",
+      "source": "EQ Timing",
+      "sourceUrl": "http://il-ternen.no",
       "registrationUrl": null
     },
     {
