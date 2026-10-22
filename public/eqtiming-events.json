@@ -1,20 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-21T09:22:50.911Z",
+  "updatedAt": "2026-10-22T09:25:51.849Z",
   "events": [
-    {
-      "id": "eq-timing:nesodden-opp-nr-3-2026:2026-10-21",
-      "name": "Nesodden Opp nr 3 2026",
-      "date": "2026-10-21",
-      "startTime": "18:15",
-      "location": "Berger Idrettspark",
-      "distanceKm": 2,
-      "elevationGainM": null,
-      "raceType": "Langrenn · Fellesstart Fristil",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:arctic-alta-backyard-2026:2026-10-24",
       "name": "Arctic Alta Backyard 2026",
