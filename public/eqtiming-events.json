@@ -1,20 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-24T08:53:44.841Z",
+  "updatedAt": "2026-10-25T09:10:15.481Z",
   "events": [
-    {
-      "id": "eq-timing:arctic-alta-backyard-2026:2026-10-24",
-      "name": "Arctic Alta Backyard 2026",
-      "date": "2026-10-24",
-      "startTime": null,
-      "location": "Tverrelvdalen",
-      "distanceKm": 80.4,
-      "elevationGainM": null,
-      "raceType": "Ultraløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": "arcticalta.no",
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:hanatrappene-opp-2026:2026-10-25",
       "name": "Hanatrappene Opp 2026",
