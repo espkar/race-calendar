@@ -1,59 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-25T09:10:15.481Z",
+  "updatedAt": "2026-10-26T10:09:41.896Z",
   "events": [
-    {
-      "id": "eq-timing:hanatrappene-opp-2026:2026-10-25",
-      "name": "Hanatrappene Opp 2026",
-      "date": "2026-10-25",
-      "startTime": "09:00",
-      "location": "Hanatrappene i Sandnes",
-      "distanceKm": 0.18,
-      "elevationGainM": null,
-      "raceType": "Annet",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:driv-karusell-2026_4.løp,-25.10.2026:2026-10-25",
-      "name": "Driv Karusell 2026_4.Løp, 25.10.2026",
-      "date": "2026-10-25",
-      "startTime": null,
-      "location": "Drivplassen Enebakk",
-      "distanceKm": 1.2,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Seriestevne/Karusell",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:sylling-speedtrail-2026:2026-10-25",
-      "name": "Sylling Speedtrail 2026",
-      "date": "2026-10-25",
-      "startTime": null,
-      "location": "Holtsmark Golf, Sylling",
-      "distanceKm": 6,
-      "elevationGainM": null,
-      "raceType": "Annet",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:helgelandsfjellet-opp-2026:2026-10-25",
-      "name": "Helgelandsfjellet opp 2026",
-      "date": "2026-10-25",
-      "startTime": null,
-      "location": "Frakkagjerd",
-      "distanceKm": 1.57,
-      "elevationGainM": null,
-      "raceType": "Motbakkeløp · Klubbstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:hålandsheia-rundt:2026-10-31",
       "name": "Hålandsheia Rundt",
