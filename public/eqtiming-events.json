@@ -1,72 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-10-31T10:24:22.254Z",
+  "updatedAt": "2026-11-01T11:17:37.804Z",
   "events": [
-    {
-      "id": "eq-timing:hålandsheia-rundt:2026-10-31",
-      "name": "Hålandsheia Rundt",
-      "date": "2026-10-31",
-      "startTime": null,
-      "location": null,
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:hinnaløpet:2026-10-31",
-      "name": "Hinnaløpet",
-      "date": "2026-10-31",
-      "startTime": "14:00",
-      "location": "Hinna",
-      "distanceKm": 9.3,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:blåmansløpene---etappe-2:2026-10-31",
-      "name": "Blåmansløpene - etappe 2",
-      "date": "2026-10-31",
-      "startTime": "10:00",
-      "location": "Fjellveien til Blåmanen, Bergen",
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:frontyard-phs:2026-10-31",
-      "name": "Frontyard PHS",
-      "date": "2026-10-31",
-      "startTime": null,
-      "location": "Stavern",
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Backyard",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:nesodden-opp-nr-3-2026:2026-10-31",
-      "name": "Nesodden Opp nr 3 2026",
-      "date": "2026-10-31",
-      "startTime": "10:45",
-      "location": "Berger Idrettspark",
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Langrenn · Fellesstart Fristil",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:martincrossen-trail-run:2026-11-04",
       "name": "Martincrossen Trail Run",
