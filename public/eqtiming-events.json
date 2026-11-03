@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-11-02T12:27:36.044Z",
+  "updatedAt": "2026-11-03T11:57:10.196Z",
   "events": [
     {
       "id": "eq-timing:martincrossen-trail-run:2026-11-04",
@@ -128,6 +128,19 @@
       "distanceKm": null,
       "elevationGainM": null,
       "raceType": "Ultraløp · Nasjonalt stevne",
+      "source": "EQ Timing",
+      "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:vinterkarusellen-romerike-3.løp-sandbekken-skole:2026-12-05",
+      "name": "Vinterkarusellen Romerike 3.løp Sandbekken skole",
+      "date": "2026-12-05",
+      "startTime": null,
+      "location": null,
+      "distanceKm": null,
+      "elevationGainM": null,
+      "raceType": "Motbakkeløp · Nasjonalt stevne",
       "source": "EQ Timing",
       "sourceUrl": null,
       "registrationUrl": null
