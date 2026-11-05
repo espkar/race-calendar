@@ -1,20 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-11-04T12:10:47.817Z",
+  "updatedAt": "2026-11-05T12:23:44.906Z",
   "events": [
-    {
-      "id": "eq-timing:martincrossen-trail-run:2026-11-04",
-      "name": "Martincrossen Trail Run",
-      "date": "2026-11-04",
-      "startTime": null,
-      "location": "Voksenjordet",
-      "distanceKm": 1,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:morothon-2026:2026-11-07",
       "name": "Morothon 2026",
