@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-11-06T12:08:22.217Z",
+  "updatedAt": "2026-11-07T11:05:06.189Z",
   "events": [
     {
       "id": "eq-timing:morothon-2026:2026-11-07",
@@ -29,9 +29,9 @@
       "registrationUrl": "https://secure.onreg.com/onreg2/front/step1.php?id=6531"
     },
     {
-      "id": "eq-timing:fedrelandet-backyard:2026-11-06",
+      "id": "eq-timing:fedrelandet-backyard:2026-11-07",
       "name": "Fedrelandet Backyard",
-      "date": "2026-11-06",
+      "date": "2026-11-07",
       "startTime": null,
       "location": "Fetsund",
       "distanceKm": null,
