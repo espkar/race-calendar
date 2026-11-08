@@ -1,59 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-11-07T11:05:06.189Z",
+  "updatedAt": "2026-11-08T11:17:52.549Z",
   "events": [
-    {
-      "id": "eq-timing:morothon-2026:2026-11-07",
-      "name": "Morothon 2026",
-      "date": "2026-11-07",
-      "startTime": null,
-      "location": "Søgne",
-      "distanceKm": 3.1,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": "www.morothon.no",
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:3-sjøersløpet-2026:2026-11-07",
-      "name": "3-Sjøersløpet 2026",
-      "date": "2026-11-07",
-      "startTime": "11:30",
-      "location": "Stavanger",
-      "distanceKm": 21.1,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Internasjonalt stevne",
-      "source": "EQ Timing",
-      "sourceUrl": "https://3sjoers.no/",
-      "registrationUrl": "https://secure.onreg.com/onreg2/front/step1.php?id=6531"
-    },
-    {
-      "id": "eq-timing:fedrelandet-backyard:2026-11-07",
-      "name": "Fedrelandet Backyard",
-      "date": "2026-11-07",
-      "startTime": null,
-      "location": "Fetsund",
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Ultraløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:jubileumsløp/terrengløp-7.november:2026-11-07",
-      "name": "Jubileumsløp/terrengløp 7.november",
-      "date": "2026-11-07",
-      "startTime": "11:00",
-      "location": "Tveitedalen",
-      "distanceKm": 3,
-      "elevationGainM": null,
-      "raceType": "Mosjonsidrettsgruper",
-      "source": "EQ Timing",
-      "sourceUrl": "http://il-ternen.no",
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:motbakkeløpet-2026:2026-11-11",
       "name": "Motbakkeløpet 2026",
