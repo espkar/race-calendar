@@ -1,7 +1,20 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-11-08T11:17:52.549Z",
+  "updatedAt": "2026-11-09T12:54:43.511Z",
   "events": [
+    {
+      "id": "eq-timing:terrengløp-2026-budal-il:2026-11-10",
+      "name": "Terrengløp 2026-Budal IL",
+      "date": "2026-11-10",
+      "startTime": "17:30",
+      "location": "Budal skistadion",
+      "distanceKm": 3,
+      "elevationGainM": null,
+      "raceType": "Generell · All · All",
+      "source": "EQ Timing",
+      "sourceUrl": null,
+      "registrationUrl": null
+    },
     {
       "id": "eq-timing:motbakkeløpet-2026:2026-11-11",
       "name": "Motbakkeløpet 2026",
