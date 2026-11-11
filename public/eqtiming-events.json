@@ -1,20 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-11-10T12:40:53.879Z",
+  "updatedAt": "2026-11-11T11:53:45.492Z",
   "events": [
-    {
-      "id": "eq-timing:terrengløp-2026-budal-il:2026-11-10",
-      "name": "Terrengløp 2026-Budal IL",
-      "date": "2026-11-10",
-      "startTime": "17:30",
-      "location": "Budal skistadion",
-      "distanceKm": 3,
-      "elevationGainM": null,
-      "raceType": "Generell · All · All",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:motbakkeløpet-2026:2026-11-11",
       "name": "Motbakkeløpet 2026",
@@ -26,6 +13,19 @@
       "raceType": "Annet",
       "source": "EQ Timing",
       "sourceUrl": "www.bykarusellen.no",
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:test-hvamrunners-indoor-200m-1-hour:2026-11-13",
+      "name": "TEST Hvamrunners Indoor 200m 1 hour",
+      "date": "2026-11-13",
+      "startTime": "08:00",
+      "location": "Neskollen",
+      "distanceKm": null,
+      "elevationGainM": null,
+      "raceType": "Ultraløp · Treningsstevne",
+      "source": "EQ Timing",
+      "sourceUrl": "https://friivii.org/neskollen-oppned/article/oppned-og-10k-14-september-2025",
       "registrationUrl": null
     },
     {
