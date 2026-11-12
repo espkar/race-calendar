@@ -1,20 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-11-11T11:53:45.492Z",
+  "updatedAt": "2026-11-12T12:44:47.146Z",
   "events": [
-    {
-      "id": "eq-timing:motbakkeløpet-2026:2026-11-11",
-      "name": "Motbakkeløpet 2026",
-      "date": "2026-11-11",
-      "startTime": null,
-      "location": "Bergen",
-      "distanceKm": 10,
-      "elevationGainM": null,
-      "raceType": "Annet",
-      "source": "EQ Timing",
-      "sourceUrl": "www.bykarusellen.no",
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:test-hvamrunners-indoor-200m-1-hour:2026-11-13",
       "name": "TEST Hvamrunners Indoor 200m 1 hour",
