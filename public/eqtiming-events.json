@@ -1,20 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-11-13T12:14:45.590Z",
+  "updatedAt": "2026-11-14T11:29:50.310Z",
   "events": [
-    {
-      "id": "eq-timing:test-hvamrunners-indoor-200m-1-hour:2026-11-13",
-      "name": "TEST Hvamrunners Indoor 200m 1 hour",
-      "date": "2026-11-13",
-      "startTime": "08:00",
-      "location": "Neskollen",
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Ultraløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": "https://friivii.org/neskollen-oppned/article/oppned-og-10k-14-september-2025",
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:blåmansløpene---etappe-3:2026-11-14",
       "name": "Blåmansløpene - etappe 3",
