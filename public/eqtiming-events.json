@@ -1,46 +1,7 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-11-14T11:29:50.310Z",
+  "updatedAt": "2026-11-15T11:58:05.871Z",
   "events": [
-    {
-      "id": "eq-timing:blåmansløpene---etappe-3:2026-11-14",
-      "name": "Blåmansløpene - etappe 3",
-      "date": "2026-11-14",
-      "startTime": "10:00",
-      "location": "Fjellveien til Blåmanen, Bergen",
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": null,
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:hvamrunners-indoor-200m-1-hour:2026-11-14",
-      "name": "Hvamrunners Indoor 200m 1 hour",
-      "date": "2026-11-14",
-      "startTime": "08:00",
-      "location": "Neskollen",
-      "distanceKm": null,
-      "elevationGainM": null,
-      "raceType": "Ultraløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": "https://friivii.org/neskollen-oppned/article/oppned-og-10k-14-september-2025",
-      "registrationUrl": null
-    },
-    {
-      "id": "eq-timing:i-heiane-odderøya-opp:2026-11-21",
-      "name": "i Heiane ODDERØYA OPP",
-      "date": "2026-11-21",
-      "startTime": null,
-      "location": "Kristiansand",
-      "distanceKm": 1,
-      "elevationGainM": null,
-      "raceType": "Terrengløp · Treningsstevne",
-      "source": "EQ Timing",
-      "sourceUrl": "www.tyndeg.no",
-      "registrationUrl": null
-    },
     {
       "id": "eq-timing:heim-6-timers-2026:2026-12-05",
       "name": "Heim 6 timers 2026",
