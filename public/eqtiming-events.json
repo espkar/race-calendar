@@ -1,6 +1,6 @@
 {
   "source": "EQ Timing",
-  "updatedAt": "2026-11-23T14:42:28.152Z",
+  "updatedAt": "2026-11-24T14:54:07.465Z",
   "events": [
     {
       "id": "eq-timing:heim-6-timers-2026:2026-12-05",
@@ -26,6 +26,19 @@
       "raceType": "Motbakkeløp · Nasjonalt stevne",
       "source": "EQ Timing",
       "sourceUrl": null,
+      "registrationUrl": null
+    },
+    {
+      "id": "eq-timing:hvamrunners-60-eller-120-minutter:2026-12-18",
+      "name": "Hvamrunners 60 eller 120 minutter",
+      "date": "2026-12-18",
+      "startTime": "17:55",
+      "location": "Neskollen",
+      "distanceKm": null,
+      "elevationGainM": null,
+      "raceType": "Ultraløp · Seriestevne/Karusell",
+      "source": "EQ Timing",
+      "sourceUrl": "https://hvamrunners.no",
       "registrationUrl": null
     }
   ]
